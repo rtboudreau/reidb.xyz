@@ -1,0 +1,99 @@
+.icon {
+  display: inline-block;
+  margin:0 5px;
+  background-repeat: no-repeat;
+  background-image: url(../img/sprite.svg);
+  filter: brightness(0%);
+  opacity: 0.7;
+  transform: scale3d(0.8,0.8,1);
+  -webkit-transform: scale3d(0.8,0.8,1);
+  transition: all .3s ease-in-out;
+}
+.icon:hover{
+  filter: brightness(100%);
+  opacity: 1;
+  transform: scale3d(1.2,1.2,1);
+  -webkit-transform: scale3d(1.2,1.2,1);
+}
+.skills-container .icon{
+  display: inline-block;
+  margin:0 5px;
+  background-repeat: no-repeat;
+  background-image: url(../img/sprite.svg);
+  filter: brightness(0) invert(1);
+  opacity: 0.7;
+  transform: scale3d(0.8,0.8,1);
+  -webkit-transform: scale3d(0.8,0.8,1);
+  transition: all .3s ease-in-out;
+}
+.skills-container .icon:hover{
+  filter: brightness(100%);
+  opacity: 1;
+  transform: scale3d(1.2,1.2,1);
+  -webkit-transform: scale3d(1.2,1.2,1);
+}
+.icon-backbone {
+  width: 32px;
+  height: 32px;
+  background-position: 0 0;
+}
+.icon-netsuite {
+  width: 32px;
+  height: 32px;
+  background-position: -48px 0;
+}
+.icon-sass {
+  width: 32px;
+  height: 32px;
+  background-position: -96px 0;
+}
+.icon-wordpress {
+  width: 32px;
+  height: 32px;
+  background-position: -144px 0;
+}
+.icon-php {
+  width: 32px;
+  height: 32px;
+  background-position: -192px 0;
+}
+.icon-jquery {
+  width: 32px;
+  height: 32px;
+  background-position: -240px 0;
+}
+.icon-html51 {
+  width: 32px;
+  height: 32px;
+  background-position: -288px 0;
+}
+.icon-css3 {
+  width: 32px;
+  height: 32px;
+  background-position: -336px 0;
+}
+.icon-rails {
+  width: 32px;
+  height: 32px;
+  background-position: -384px 0;
+}
+.icon-git {
+  width: 32px;
+  height: 32px;
+  background-position: -432px 0;
+}
+.icon-gulp {
+  width: 32px;
+  height: 32px;
+  background-position: -480px 0;
+}
+.icon-sass1 {
+  width: 32px;
+  height: 32px;
+  background-position: -528px 0;
+}
+.icon-bootstrap {
+  width: 32px;
+  height: 32px;
+  background-position: -576px 0;
+}
