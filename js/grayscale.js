@@ -272,8 +272,8 @@ setInterval(GetClock,1000);
 
       // build scene
       var scene = new ScrollMagic.Scene({
-          triggerElement: "#about",
-          duration: 450,
+          triggerElement: "#squiggle1_trigger",
+          duration: 350,
           tweenChanges: true
         })
         .setTween(tween)
@@ -305,12 +305,12 @@ setInterval(GetClock,1000);
 
       // build scene
       var scene = new ScrollMagic.Scene({
-          triggerElement: ".work-section .sec-title",
-          duration: 250,
+          triggerElement: "#squiggle2_trigger",
+          duration: 350,
           tweenChanges: true
         })
         .setTween(tween)
-        .addIndicators() // add indicators (requires plugin)
+        .addIndicators("squiggle2") // add indicators (requires plugin)
         .addTo(controller);
 
     });
