@@ -50,33 +50,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
     });
 
 
-    // current time side stats
-    $(document).ready(function() {
-      var tday=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
-var tmonth=["January","February","March","April","May","June","July","August","September","October","November","December"];
-
-function GetClock(){
-var d=new Date();
-var nday=d.getDay(),nmonth=d.getMonth(),ndate=d.getDate();
-var nhour=d.getHours(),nmin=d.getMinutes(),nsec=d.getSeconds(),ap;
-
-if(nhour==0){ap=" AM";nhour=12;}
-else if(nhour<12){ap=" AM";}
-else if(nhour==12){ap=" PM";}
-else if(nhour>12){ap=" PM";nhour-=12;}
-
-if(nmin<=9) nmin="0"+nmin;
-if(nsec<=9) nsec="0"+nsec;
-
-var clocktext=""+tday[nday]+", "+tmonth[nmonth]+" "+ndate+" "+nhour+":"+nmin+":"+nsec+ap+"";
-document.getElementById('clockbox').innerHTML=clocktext;
-}
-
-GetClock();
-setInterval(GetClock,1000);
-    });
-
-
     // GreenSock
 
     // hello fade-in
@@ -130,7 +103,7 @@ setInterval(GetClock,1000);
         var pinIntroScene = new ScrollMagic.Scene({
             triggerElement: '.devices',
             triggerHook: 0.08,
-            duration: '100%'
+            duration: '90%'
           })
           .setPin('.devices', {
             pushFollowers: false
@@ -143,7 +116,7 @@ setInterval(GetClock,1000);
           var pinIntroScene = new ScrollMagic.Scene({
               triggerElement: '.smDevices',
               triggerHook: 0.05,
-              duration: '100%'
+              duration: '90%'
             })
             .setPin('.smDevices', {
               pushFollowers: false
@@ -187,7 +160,7 @@ setInterval(GetClock,1000);
 
         var scene = new ScrollMagic.Scene({
             triggerElement: this,
-            triggerHook: 0.7
+            triggerHook: 0.85
           })
           .setTween(tl)
           .addIndicators()
@@ -358,6 +331,32 @@ setInterval(GetClock,1000);
     $('body').scrollspy({
       target: '#mainNav',
       offset: 54
+    });
+
+    // current time side stats
+    $(document).ready(function() {
+      var tday=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+      var tmonth=["January","February","March","April","May","June","July","August","September","October","November","December"];
+
+      function GetClock(){
+      var d=new Date();
+      var nday=d.getDay(),nmonth=d.getMonth(),ndate=d.getDate();
+      var nhour=d.getHours(),nmin=d.getMinutes(),nsec=d.getSeconds(),ap;
+
+      if(nhour==0){ap=" AM";nhour=12;}
+      else if(nhour<12){ap=" AM";}
+      else if(nhour==12){ap=" PM";}
+      else if(nhour>12){ap=" PM";nhour-=12;}
+
+      if(nmin<=9) nmin="0"+nmin;
+      if(nsec<=9) nsec="0"+nsec;
+
+      var clocktext=""+tday[nday]+", "+tmonth[nmonth]+" "+ndate+" "+nhour+":"+nmin+":"+nsec+ap+"";
+      document.getElementById('clockbox').innerHTML=clocktext;
+      }
+
+      GetClock();
+      setInterval(GetClock,1000);
     });
 
 
