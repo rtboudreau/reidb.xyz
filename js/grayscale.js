@@ -174,7 +174,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
       var tween = new TimelineMax()
         .from(sittingme, 1.75, {
-          y: -260,
+          y: -187,
           x:  -30,
           scale: 0.5,
           autoAlpha: 1,

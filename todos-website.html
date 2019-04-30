@@ -60,39 +60,7 @@
     </ul>
   </nav>
 
-  <!-- <div id="loader-wrapper">
-      <div id="loader"></div>
-      <div class="loader-section"></div>
-    </div> -->
-
-    <section class="project_navigation p-0">
-      <div class="container">
-        <div class="row">
-          <div class="col-1 previous-project">
-            <i class="fas fa-chevron-left"></i>
-          </div>
-          <div class="col-1 next-project">
-            <i class="fas fa-chevron-right"></i>
-          </div>
-        </div>
-      </div>
-    </section>
-
-  <!-- social and hero greeting -->
-  <section>
-
-
-
-    <div class="container">
-      <div class="row">
-        <div class="col-md-8 mx-auto text-center">
-          <h1>MarxImports.com <i class="fas fa-external-link-alt title-link"></i></h1>
-          <p>Marx Imports is world class importer of specialty meats with an acute focus on animal welfare. Ranging from New Zealand grass-fed beef to the highly sought after Spanish Iberico pork, their products occupy the shelves of national retailers, appear on the menus of Michelin starred restaurants, and comprise the ingredients in major specialty food products.</p>
-        </div>
-      </div>
-    </div>
-
-
+  <div>
     <ul class="list-socials">
       <li>
         <a href="https://github.com/rtboudreau" rel="external" target="_blank">
@@ -110,6 +78,35 @@
         </a>
       </li>
     </ul>
+  </div>
+
+  <section class="project-navigation p-0">
+    <div class="container">
+      <div class="row">
+        <div class="previous-project p-0">
+          <a href="/marxfoods-website.html">
+            <p class="text-center"><i class="fas fa-arrow-left"></i> <br />prev</p>
+          </a>
+        </div>
+        <div class="next-project p-0">
+          <a href="/marximports-website.html">
+            <p><i class="fas fa-arrow-right"></i><br />next</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- hero greeting -->
+  <section>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-md-8 mx-auto text-center">
+          <h1><a href="https://to--dos.herokuapp.com/login" target="_blank">To-Dos App <i class="fas fa-external-link-alt title-link"></i></a></h1>
+          <p>To-Dos is a fully responsive Ruby on Rails web application with clean design and intuitive UX.  This is a personal project of mine that I undertook in order to learn Rails and one that will continue to evolve.  To-Dos is currently hosted on Heroku so you may experience a longer than normal load time on initial load.</p>
+        </div>
+      </div>
+    </div>
 
   </section>
 
@@ -118,7 +115,7 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-10 col-lg-8 offset-md-1 offset-lg-2 text-center">
-          <img src="img/MarxImportsMacbook_1200.jpg" class="img-fluid" alt="Rendering of MarxFoods.com on Laptop">
+          <img src="img/toDosMacbook_1200.jpg" class="img-fluid" alt="To-Dos Login Screen render">
         </div>
       </div>
     </div>
@@ -129,7 +126,7 @@
     <div class="container-fluid trans">
       <div class="row">
         <div class="col-md-8 col-lg-8 offset-md-2 offset-lg-2 text-center">
-          <img src="img/MarxImportsSmDevices_1000.jpg" class="img-fluid" alt="Rendering of MarxFoods.com on iPhone and iPad">
+          <img src="img/toDosSmDevices_1000.jpg" class="img-fluid" alt="To-Dos main page and list render">
         </div>
       </div>
     </div>
@@ -144,66 +141,23 @@
 
       <div class="row">
         <div id="squiggle1_trigger"></div>
-        <div class="col-md-10 col-lg-4 offset-sm-1 textEffect">
-          <h2 class="sec-title pl-3">b<br >rief</h2>
+        <div class="col-md-10 col-lg-4 offset-md-1 textEffect">
+          <h2 class="sec-title pl-3">br<br />ief</h2>
           <svg version="1.1" class="ml-3" xmlns="http://www.w3.org/2000/svg" width="50" height="20">
             <path id="squiggle1" style="stroke-linecap: round; stroke-linejoin: round; margin-left: 200px;" fill="none" stroke="#1c1b21" stroke-width="3" d="M1.06,2.121L6.654,7.715L12.247,2.121L
                    17.839,7.715L23.433,2.121L29.026,7.715L34.619,2.121L40.212,7.715L45.806,2.121" />
           </svg>
-          <div class="p-wrapper" id="counter">
-            <p class="pl-3">As Marx Imports' market reach and visibility continued to grow they needed a website that would provide the usability and content that their customers needed.  Working in concert  with the creative team and following the spec-sheet I develop an extensive static site which was built with Bootstrap and PHP.  Include in the site is information on each of the programs/species as well as educational material to help train third-party sales people.</p>
-            <p class="pl-3">Following the redevelopment of <a href="http://www.marximports.com/" target="_blank">MarxImports.com</a> there has been a  <strong>37%</strong> growth in users and a <strong>27%</strong> growth in organic search traffic.</p>
+          <div class="p-wrapper">
+            <p class="pl-3">I set out wanting to develop a Rails application that was light, elegant, responsive, and easy to use.  I settled on building To-Dsos because it checked the four basic functions that make up CRUD.  Users are able to create accounts as well as new to do lists.  They can view and edit all of their to do lists.  Finally, they are able to destroy any items in a to do list or the to do list itself.   </p>
+          </div>
+          <div class="p-wrapper">
+            <p class="pl-3">The adjacent video gives a brief walkthrough of To-Dos including it's functinality and design.
+            </p>
           </div>
         </div>
-        <div class="col-md-10 col-lg-6 ">
-          <div class="card-columns no-gutter-card-deck">
-            <div class="card port1 ">
-              <!-- Card content -->
-              <img src="img/to_dos_sm.jpg" class="img-fluid" alt="To-Do's icon">
-              <div class="overlay">
-                <div class="text">To-Dos<br /><i class="fab fa-js"></i></div>
-              </div>
-            </div>
-            <div class="card port2">
-              <!-- Card content -->
-              <img src="img/marx_foods_fish_lg.jpg" class="img-fluid" alt="">
-              <div class="overlay">
-                <div class="text">Hello World<br /><i class="fab fa-js"></i></div>
-                <div class="text"></div>
-              </div>
-            </div>
-            <div class="card port3">
-              <!-- Card content -->
-              <img src="img/marx_foods_fish_lg.jpg" class="img-fluid" alt="whole salmon, no head">
-              <div class="overlay">
-                <div class="text">MarxFoods.com<br /><i class="fab fa-js"></i></div>
-                <div class="text"></div>
-              </div>
-            </div>
-            <div class="card port4">
-              <!-- Card content -->
-              <img src="img/to_dos_sm.jpg" class="img-fluid" alt="">
-              <div class="overlay">
-                <div class="text">Hello World<br /><i class="fab fa-js"></i></div>
-                <div class="text"></div>
-              </div>
-            </div>
-            <div class="card port5">
-              <!-- Card content -->
-              <img src="img/marx_food_taco_sm.jpg" class="img-fluid" alt="tacos on plate">
-              <div class="overlay">
-                <div class="text">Hello World<br /><i class="fab fa-js"></i></div>
-                <div class="text"></div>
-              </div>
-            </div>
-            <div class="card port6">
-              <!-- Card content -->
-              <img src="img/marx_foods_fish_lg.jpg" class="img-fluid" alt="">
-              <div class="overlay">
-                <div class="text">Hello World<br /><i class="fab fa-js"></i></div>
-                <div class="text"></div>
-              </div>
-            </div>
+        <div class="col-md-10 col-lg-5 offset-md-1 mt-5">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/jjl4xwLY-pw?modestbranding=1&showinfo=0&rel=0&color=white" allowfullscreen></iframe>
           </div>
         </div>
       </div>
@@ -227,11 +181,8 @@
                   </svg>
                 </i>
                 <ul class="mt-2">
-                  <li>Developing all PHP, CSS, and JavaScript assets for the project.</li>
-                  <li>Assisting design team with UX and layout.</li>
-                  <li>Creating, resizing, and optimizing images and graphics.</li>
-                  <li>Implementing Google Tag Manager.</li>
-                  <li>General updating, maintenance, and troubleshooting.</li>
+                  <li>Built from scratch by me!</li>
+                  <li>Development, Design, Deployment, etc.</li>
                 </ul>
               </div>
               <div class="col-md-4 offset-md-2">
@@ -242,12 +193,16 @@
                   </svg>
                 </i>
                 <ul class="mt-2">
-                  <li><span class="icon icon-bootstrap" title="Bootstrap"></span>
-                  <span class="icon icon-php" title="PHP"></span>
-                  <span class="icon icon-html5" title="HTML5"></span></li>
+                  <li><span class="icon icon-rails" title="Ruby on Rails"></span>
+                  <span class="icon icon-html5"></span>
+                  <span class="icon icon-css3"></span></li>
 
-                  <li><span class="icon icon-css3" title="CSS3"></span>
-                  <span class="icon icon-jquery" title="jquery"></span></li>
+                  <li><span class="icon icon-bootstrap"></span>
+                  <span class="icon icon-jquery"></span>
+                  <span class="icon icon-sass"></span></li>
+
+                  <li>
+                  <span class="icon icon-git"></span></li>
                 </ul>
               </div>
 
