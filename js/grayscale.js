@@ -239,7 +239,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
           ease: Linear.easeNone
         })) // draw word for 0.9
         .add(TweenMax.to($squiggle1, 1, {
-          stroke: "#ff5751",
+          stroke: "#4cab9e",
           ease: Linear.easeNone
         }), 0); // change color during the whole thing
 
@@ -272,7 +272,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
           ease: Linear.easeNone
         })) // draw word for 0.9
         .add(TweenMax.to($squiggle2, 1, {
-          stroke: "#ff5751",
+          stroke: "#4cab9e",
           ease: Linear.easeNone
         }), 0); // change color during the whole thing
 
