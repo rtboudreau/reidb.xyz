@@ -27,7 +27,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Reid Boudreau >> XYZ</title>
+  <title>Reid Boudreau</title>
 
   <!-- Bootstrap core CSS -->
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -39,9 +39,22 @@
   <link href="https://fonts.googleapis.com/css?family=Chivo:400,700,900" rel="stylesheet">
 
   <!-- Custom styles for this template -->
-  <link href="css/topsecret.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
   <link href="css/sprite.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" integrity="sha256-j+P6EZJVrbXgwSR5Mx+eCS6FvP9Wq27MBRC/ogVriY0=" crossorigin="anonymous" />
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="img/apple-touch-icon-57x57.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/apple-touch-icon-114x114.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/apple-touch-icon-144x144.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="img/apple-touch-icon-120x120.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="img/apple-touch-icon-152x152.png" />
+  <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16" />
+  <meta name="application-name" content="Reid Boudreau"/>
+  <meta name="msapplication-TileColor" content="#FFFFFF" />
+  <meta name="msapplication-TileImage" content="img/mstile-144x144.png" />
 
 </head>
 
@@ -60,37 +73,37 @@
     </ul>
   </nav>
 
+  <div>
+    <ul class="list-socials">
+      <li>
+        <a href="https://github.com/rtboudreau" rel="external" target="_blank">
+          <span class="icon icon-github" title="Github"></span>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/rtboudreau/" rel="external" target="_blank">
+          <span class="icon icon-linkedin" title="LinkedIn"></span>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.instagram.com/just_reidb/" rel="external" target="_blank">
+          <span class="icon icon-instagram" title="Instagram"></span>
+        </a>
+      </li>
+    </ul>
+  </div>
+
   <!-- <div id="loader-wrapper">
       <div id="loader"></div>
       <div class="loader-section"></div>
     </div> -->
-
-    <div>
-      <ul class="list-socials">
-        <li>
-          <a href="https://github.com/rtboudreau" rel="external" target="_blank">
-            <span class="icon icon-github" title="Github"></span>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/in/rtboudreau/" rel="external" target="_blank">
-            <span class="icon icon-linkedin" title="LinkedIn"></span>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.instagram.com/just_reidb/" rel="external" target="_blank">
-            <span class="icon icon-instagram" title="Instagram"></span>
-          </a>
-        </li>
-      </ul>
-    </div>
 
   <!-- hero greeting -->
   <section class="masthead" id="top">
 
     <div class="intro-body">
 
-      <div class="container-fluid">
+      <div id="hello" class="container-fluid">
         <div class="row">
           <div class="col-lg-6 mx-auto">
             <h1 class="brand-heading">he<br>llo</h1>
@@ -132,7 +145,7 @@
             <path id="squiggle1" style="stroke-linecap: round; stroke-linejoin: round; margin-left: 200px;" fill="none" stroke="#1c1b21" stroke-width="3" d="M1.06,2.121L6.654,7.715L12.247,2.121L
                    17.839,7.715L23.433,2.121L29.026,7.715L34.619,2.121L40.212,7.715L45.806,2.121" />
           </svg>
-          <p class="px-3">Below you will find some of my most recent projects along with the technology and skills used in their development! </p>
+          <p class="px-3">Ranging from Ruby on Rails to Backbone.js to Bootstrap and beyond, these works aim to provide insight into some of my more recent work.  </p>
         </div>
         <div class="col-md-10 col-xl-7 offset-md-1 offset-xl-0">
           <div class="card-columns no-gutter-card-deck">
@@ -141,7 +154,7 @@
               <img src="img/to_dos_sm.jpg" class="img-fluid" alt="To-Do's icon">
               <a href="todos-website.html">
                 <div class="overlay">
-                  <div class="overlay-text">To-Dos<hr />
+                  <div class="overlay-text"><p class="m-0">To-Dos</p><hr />
                     <span class="icon icon-rails" title="Ruby on Rails"></span>
                     <span class="icon icon-bootstrap" title="Bootstrap"></span>
                     <span class="icon icon-html5" title="HTML5"></span>
@@ -156,22 +169,24 @@
             <div class="card port2">
               <!-- Card content -->
               <img src="img/marx_foods_fish_lg.jpg" class="img-fluid" alt="">
-              <div class="overlay">
-                <div class="overlay-text">MarxImports.com<hr />
-                  <span class="icon icon-bootstrap" title="Bootstrap"></span>
-                  <span class="icon icon-php" title="PHP"></span>
-                  <span class="icon icon-html5" title="HTML5"></span>
-                  <span class="icon icon-css3" title="CSS3"></span>
-                  <span class="icon icon-jquery" title="jquery"></span>
+              <a href="marximports-website.html">
+                <div class="overlay">
+                  <div class="overlay-text"><p class="m-0">MarxImports.com</p><hr />
+                    <span class="icon icon-bootstrap" title="Bootstrap"></span>
+                    <span class="icon icon-php" title="PHP"></span>
+                    <span class="icon icon-html5" title="HTML5"></span>
+                    <span class="icon icon-css3" title="CSS3"></span>
+                    <span class="icon icon-jquery" title="jquery"></span>
+                  </div>
                 </div>
-              </div>
+              </a>
             </div>
             <div class="card port3">
               <!-- Card content -->
               <img src="img/marx_foods_fish_lg.jpg" class="img-fluid" alt="whole salmon, no head">
               <a href="marxfoods-website.html">
                 <div class="overlay">
-                  <div class="overlay-text">MarxFoods.com<hr />
+                  <div class="overlay-text"><p class="m-0">MarxFoods.com</p><hr />
                     <span class="icon icon-netsuite" title="Netsuite"></span>
                     <span class="icon icon-bootstrap" title="Bootstrap"></span>
                     <span class="icon icon-backbone" title="Backbone.js"></span>
@@ -190,7 +205,7 @@
               <img src="img/naFoodVanTile_sm.jpg" class="img-fluid" alt="">
               <a href="nafoods-rebrand.html">
                 <div class="overlay">
-                  <div class="overlay-text">NAFood<hr />
+                  <div class="overlay-text"><p class="m-0">NAFood</p><hr />
                     <span class="icon icon-illustrator" title="Adobe Illustrator"></span>
                     <span class="icon icon-photoshop" title="Adobe Photoshop"></span>
                     <span class="icon icon-wordpress" title="Wordpress"></span>
@@ -201,9 +216,9 @@
             <div class="card port5">
               <!-- Card content -->
               <img src="img/marx_food_taco_sm.jpg" class="img-fluid" alt="tacos on plate">
-              <a href="marxfoods-recipes.html">
+              <a href="marxfood-recipes.html">
                 <div class="overlay">
-                  <div class="overlay-text">MarxFood.com (Recipes)<hr />
+                  <div class="overlay-text"><p class="m-0">MarxFood.com (Recipes)</p><hr />
                     <span class="icon icon-wordpress" title="Wordpress"></span>
                     <span class="icon icon-html5" title="HTML5"></span>
                     <span class="icon icon-css3" title="CSS3"></span>
@@ -216,14 +231,17 @@
             <div class="card port6">
               <!-- Card content -->
               <img src="img/ferryTales_fog_lg.jpg" class="img-fluid" alt="Deck hand on front of Ferry">
-              <div class="overlay">
-                <div class="overlay-text">FerryTales.xyz<hr />
-                  <span class="icon icon-wordpress" title="Wordpress"></span>
-                  <span class="icon icon-html5" title="HTML5"></span>
-                  <span class="icon icon-css3" title="CSS3"></span>
-                  <span class="icon icon-jquery" title="jquery"></span>
+              <a href="ferrytales-website.html">
+                <div class="overlay">
+                  <div class="overlay-text"><p class="m-0">FerryTales.xyz<hr />
+                    <span class="icon icon-wordpress" title="Wordpress"></span>
+                    <span class="icon icon-html5" title="HTML5"></span>
+                    <span class="icon icon-css3" title="CSS3"></span>
+                    <span class="icon icon-jquery" title="jquery"></span>
+                    <span class="icon icon-php" title="php"></span>
+                  </div>
                 </div>
-              </div>
+              </a>
             </div>
           </div>
 
@@ -394,24 +412,27 @@
                        17.839,7.715L23.433,2.121L29.026,7.715L34.619,2.121L40.212,7.715L45.806,2.121" />
                 </svg>
                 <div class="p-wrapper">
-                  <p>Hi, I'm Reid Boudreau and I am a web developer with over 8 years of experience. I excel at responsive development, cross browser compatibility, and crafting beautiful web pages with compelling content and seamless usability.</p>
+                  <p>I'm driven by the desire of doing things better, more efficently, differently.</p>
                 </div>
                 <div class="p-wrapper">
-                  <p>Originally from a creative and marketing background I kept finding myself drawn to projects that relied on coding. Through years or practice, online tutorials, books, and a sustained inquiry I’ve grown into a proficient and efficient developer.    </p>
+                  <p>A web developer with 10+ years of experience I excel at responsive development, cross browser compatibility, and crafting beautiful web pages with compelling content and seamless usability.  I approach each project with thorough consideration in order to produce reusable, scalable, coherent, and clean code.</p>
                 </div>
                 <div class="p-wrapper">
-                  <p>I have worked across a diversity of content management systems and frameworks including: NetSuite SCA, Bootstrap, Backbone.js, Drupal, and WordPress.  Recently I’ve tasked myself with learning Ruby/Ruby on Rails and have my first application, <a href="https://to--dos.herokuapp.com/" target="_blank">To-Dos</a>, hosted on Heroku.   I approach each project with thourough consideration in order to produce reusable, scalable, coherent, and clean code.</p>
+                  <p>Originally from a creative and marketing background I routinely found myself drawn to coding based projects. Through years or practice, online tutorials, books, the occasional class, and a sustained inquiry I’ve grown into a proficient and efficient developer. </p>
+                </div>
+                <div class="p-wrapper">
+                  <p>I have worked across a diversity of content management systems and frameworks including: NetSuite SCA, Bootstrap, Backbone.js, Drupal, and WordPress.  Recently I’ve tasked myself with learning Ruby on Rails and have my first application, <a href="https://to--dos.herokuapp.com/" target="_blank">To-Dos</a>, hosted on Heroku.</p>
                 </div>
                 <div class="p-wrapper">
                   <p>I routinely dive headfirst into new languages and frameworks looking for ways to grow, to do things differently, and to improve as a developer.  Trends in web development are fleeting - what’s “hot” today may not be tomorrow - and so I find myself constantly moving and improving.</p>
                 </div>
                 <div class="p-wrapper">
-                  <p> I reside in the Seattle area with my wife and son. I enjoy <a href="https://www.instagram.com/p/BEmObCkOG7W/?taken-by=just_reidb" target="_blank">cycling</a>, <a
+                  <p> I live in the Seattle area with my wife and son. I enjoy <a href="https://www.instagram.com/p/BEmObCkOG7W/?taken-by=just_reidb" target="_blank">cycling</a>, <a
                       href="https://www.instagram.com/p/BGLW1xpuG5X/?taken-by=just_reidb" target="_blank">eating oysters</a>, <a href="https://www.instagram.com/p/xhKerzuG3q/?taken-by=just_reidb" target="_blank">trips to the peninsula</a>, <a
-                      href="https://www.instagram.com/p/rfv1GjOG8O/?taken-by=just_reidb" target="_blank">spiral cut hot-dogs</a>, and now thanks to my toddler: throwing rocks into The Sound.</p>
+                      href="https://www.instagram.com/p/rfv1GjOG8O/?taken-by=just_reidb" target="_blank">spiral cut hot-dogs</a>, and a seeemingly endless supply of home improvement projects.</p>
                 </div>
                 <div class="p-wrapper">
-                  <p>Please do not hesitate to <a data-toggle="collapse" class="primary-link" data-parent="#accordion" href="#collapseOne">contact</a> me if there are any project that I can help you with.</p>
+                  <p>Please do not hesitate to <a data-toggle="collapse" class="primary-link" data-parent="#accordion" href="#collapseOne">contact</a> me in regard to job openings or projects that I can be of assistance on.</p>
                 </div>
               </div>
             </div>
@@ -439,12 +460,8 @@
                 <div class="row">
                   <div class="col-lg-8 mx-auto">
                     <form id="contact-form" method="post" action="contact.php" role="form">
-                      <div class="messages text-center mt-5">
-                        <h3>let's chat</h3>
-                      </div>
 
-                      <div class="controls">
-
+                      <div class="controls mt-5">
                         <div class="row">
                           <div class="col-md-6">
                             <div class="form-group">
@@ -492,20 +509,10 @@
                       </div>
 
                       <div class="row">
-                        <div class="col-md-12">
-                          <div class="form-group">
-                            <!-- Replace data-sitekey with your own one, generated at https://www.google.com/recaptcha/admin -->
-                            <div class="g-recaptcha" data-sitekey="6LdFfkMUAAAAAE70s3jLktId8bFvQO2UUU49w8Vj"></div>
-                          </div>
-                        </div>
-                        <div class="col-md-12 text-center">
-                          <input type="submit" class="btn btn-success btn-send" value="Send message">
-                        </div>
-                      </div>
 
-                      <div class="row">
-                        <div class="col-md-12">
-                          &copy; 2018 reid boudreau
+                        <div class="col-md-12 text-center">
+                          <div class="g-recaptcha d-inline-block" data-sitekey="6LdFfkMUAAAAAE70s3jLktId8bFvQO2UUU49w8Vj"></div><br />
+                          <input type="submit" class="btn btn-contact btn-send d-block mx-auto my-3" value="Send message">
                         </div>
                       </div>
                     </form>

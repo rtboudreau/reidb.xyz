@@ -87,7 +87,7 @@ p a {
 }
 
 p a:hover {
-  color: #0a1529;
+  color: #f8f8f8;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, transparent), color-stop(0, rgba(76, 171, 158, 0.8)));
   background-image: linear-gradient(180deg, transparent 0, rgba(76, 171, 158, 0.8) 0);
   background-position: 0 0;
@@ -209,7 +209,7 @@ a:focus, a:hover {
 
 .masthead {
   display: table;
-  margin-top: -16px;
+  /* margin-top: -16px; */
   height: 100%;
   width: 100%;
   padding: 0;
@@ -225,9 +225,6 @@ a:focus, a:hover {
   vertical-align: middle;
 }
 
-.masthead .marx {
-  background: #413D3C;
-}
 
 .masthead .intro-body .brand-heading {
   font-family: 'Chivo', sans-serif;
@@ -299,13 +296,32 @@ a:focus, a:hover {
 }
 
 .btn {
-  font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Chivo', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 400;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   text-transform: uppercase;
   border-radius: 0;
 }
+
+.btn:hover{
+  color: #4caa9e;
+  background: #1b1a20;
+}
+
+.btn-contact {
+    background: #1b1a20;
+    color: #fff;
+    border: 0;
+}
+
+.btn-contact.disabled, .btn-contact:disabled {
+  background: #1b1a20;
+  color: #fff;
+  border: 0;
+}
+
+
 
 .btn-default {
   color: #42DCA3;
@@ -314,7 +330,7 @@ a:focus, a:hover {
 }
 
 .btn-default:focus, .btn-default:hover {
-  color: black;
+  color: #fff;
   border: 1px solid #42DCA3;
   outline: none;
   background-color: #42DCA3;
@@ -626,9 +642,7 @@ ul#navi li {
   }
 }
 
-ul#navi li a:hover {
-  text-decoration: underline;
-}
+
 
 ul#navi .home {
   position: fixed;
@@ -660,7 +674,7 @@ ul#navi .about {
 .list-socials {
   position: absolute;
   z-index: 200;
-  top: 10px;
+  top:-8px;
   list-style: none;
 }
 
@@ -668,7 +682,6 @@ ul.list-socials {
   text-align: center;
   list-style: none;
   list-style-type: none;
-  z-index: 300;
   left: 0;
   right: 0;
 }

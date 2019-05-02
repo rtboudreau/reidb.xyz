@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
           .css({
             'overflow-y': 'scroll'
           });
-      }, 1100);
+      }, 500);
     });
 
 
@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
           y: -50,
           autoAlpha: 0,
           ease: Power1.easeOut
-        }, '+=1.5')
+        }, '+=0.95')
         .from(introText, 0.5, {
           y: -25,
           autoAlpha: 0,
