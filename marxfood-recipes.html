@@ -43,7 +43,21 @@
   <link href="css/sprite.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" integrity="sha256-j+P6EZJVrbXgwSR5Mx+eCS6FvP9Wq27MBRC/ogVriY0=" crossorigin="anonymous" />
 
+  <!-- Favicons -->
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="img/apple-touch-icon-57x57.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/apple-touch-icon-114x114.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/apple-touch-icon-144x144.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="img/apple-touch-icon-120x120.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="img/apple-touch-icon-152x152.png" />
+  <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16" />
+  <meta name="application-name" content="Reid Boudreau"/>
+  <meta name="msapplication-TileColor" content="#FFFFFF" />
+  <meta name="msapplication-TileImage" content="img/mstile-144x144.png" />
+
 </head>
+
 
 <body id="page-top">
   <!-- Google Tag Manager (noscript) -->
@@ -53,10 +67,10 @@
   <!-- Navigation -->
   <nav>
     <ul id="navi">
-      <li class="home"><a class="nav-link js-scroll-trigger" href="index.html#top">home</a></li>
-      <li class="about"><a class="nav-link js-scroll-trigger" href="index.html#about">about</a></li>
+      <li class="home"><a class="nav-link js-scroll-trigger" href="/">home</a></li>
+      <li class="about"><a class="nav-link js-scroll-trigger" href="/#about">about</a></li>
       <li class="contact"><a data-toggle="collapse" class="nav-link active primary-link" data-parent="#accordion" href="#collapseOne">contact</a></li>
-      <li class="work"><a class="nav-link js-scroll-trigger" href="index.html#work">work</a></li>
+      <li class="work"><a class="nav-link js-scroll-trigger" href="/#work">work</a></li>
     </ul>
   </nav>
 
@@ -80,7 +94,7 @@
     </ul>
   </div>
 
-  <section class="project-navigation p-0">
+  <section class="project-navigation p-0 d-none d-sm-block">
     <div class="container">
       <div class="row">
         <div class="previous-project p-0">
@@ -292,7 +306,6 @@
                   <div class="col-lg-8 mx-auto">
                     <form id="contact-form" method="post" action="contact.php" role="form">
                       <div class="messages text-center">
-                        <h3>let's chat</h3>
                       </div>
 
                       <div class="controls">
@@ -344,22 +357,12 @@
                       </div>
 
                       <div class="row">
-                        <div class="col-md-12">
-                          <div class="form-group">
-                            <!-- Replace data-sitekey with your own one, generated at https://www.google.com/recaptcha/admin -->
-                            <!-- <div class="g-recaptcha" data-sitekey="6LdFfkMUAAAAAE70s3jLktId8bFvQO2UUU49w8Vj"></div> -->
-                          </div>
-                        </div>
                         <div class="col-md-12 text-center">
-                          <input type="submit" class="btn btn-success btn-send" value="Send message">
+                          <div class="g-recaptcha d-inline-block" data-sitekey="6LdFfkMUAAAAAE70s3jLktId8bFvQO2UUU49w8Vj"></div><br />
+                          <input type="submit" class="btn btn-contact btn-send d-block mx-auto mt-3 mb-5" value="Send message">
                         </div>
                       </div>
 
-                      <div class="row">
-                        <div class="col-md-12">
-                          &copy; 2018 reid boudreau
-                        </div>
-                      </div>
                     </form>
                   </div>
 
@@ -371,6 +374,7 @@
       </div>
     </div>
   </section>
+
 
   <footer>
     <div class="container">

@@ -104,6 +104,18 @@ a:focus, a:hover {
   text-decoration: none;
 }
 
+li a{
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  color: #4cab9e;
+}
+
+@media (min-width: 768px) {
+  li a{
+    color: #1c1b20;
+  }
+}
+
 .sec-title {
   font-size: 5rem;
   text-transform: uppercase;
@@ -138,7 +150,7 @@ a:focus, a:hover {
     font-size: 1.2rem;
 }
 
-
+/*
 
 #mainNav {
   font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -205,14 +217,14 @@ a:focus, a:hover {
   #mainNav .nav-link.active:hover {
     color: white;
   }
-}
+} */
 
 .masthead {
   display: table;
-  /* margin-top: -16px; */
   height: 100%;
   width: 100%;
   padding: 0;
+  margin-top: -16px;
   text-align: center;
   color: white;
   background-size: cover;
@@ -251,7 +263,7 @@ a:focus, a:hover {
 @media (min-width: 768px) {
   .masthead {
     height: 100%;
-    /*padding: 60px;*/
+    margin-top: 0;
   }
 
   .masthead .intro-body .brand-heading {
@@ -512,10 +524,14 @@ ul.banner-social-buttons {
 }
 
 .skills-container {
-  padding: 60px;
+  padding: 60px 20px;
   overflow: hidden;
   background-color:#1c1b20;
-  /* background-color:  rgb(73, 80, 87); */
+}
+@media (min-width: 992px) {
+  .skills-container {
+    padding: 60px;
+  }
 }
 
 
@@ -674,8 +690,13 @@ ul#navi .about {
 .list-socials {
   position: absolute;
   z-index: 200;
-  top:-8px;
+  top:10px;
   list-style: none;
+}
+@media (min-width: 768px) {
+  .list-socials {
+    top:-8px;
+  }
 }
 
 ul.list-socials {

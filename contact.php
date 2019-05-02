@@ -14,10 +14,10 @@ $subject = 'New message from reidb.xyz';
 
 // form field names and their translations.
 // array variable name => Text to appear in the email
-$fields = array('firstName' => 'First Name', 'lastName' => 'Last Name', 'phone' => 'Phone', 'email' => 'Email', 'message' => 'Message'); 
+$fields = array('firstName' => 'First Name', 'lastName' => 'Last Name', 'phone' => 'Phone', 'email' => 'Email', 'message' => 'Message');
 
 // message that will be displayed when everything is OK :)
-$okMessage = 'Contact form successfully submitted. Thank you, I will get back to you soon!';
+$okMessage = 'Thank you for reaching out!  I\'ll get back to you soon.';
 
 // If something goes wrong, we will display this message.
 $errorMessage = 'There was an error while submitting the form. Please try again later';
@@ -33,11 +33,11 @@ try
 {
 
     if(count($_POST) == 0) throw new \Exception('Form is empty');
-            
+
     $emailText = "You have a new message from your contact form\n=============================\n";
 
     foreach ($_POST as $key => $value) {
-        // If the field exists in the $fields array, include it in the email 
+        // If the field exists in the $fields array, include it in the email
         if (isset($fields[$key])) {
             $emailText .= "$fields[$key]: $value\n";
         }
@@ -49,7 +49,7 @@ try
         'Reply-To: ' . $from,
         'Return-Path: ' . $from,
     );
-    
+
     // Send email
     mail($sendTo, $subject, $emailText, implode("\n", $headers));
 
