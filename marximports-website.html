@@ -41,7 +41,6 @@
   <!-- Custom styles for this template -->
   <link href="css/style.css" rel="stylesheet">
   <link href="css/sprite.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" integrity="sha256-j+P6EZJVrbXgwSR5Mx+eCS6FvP9Wq27MBRC/ogVriY0=" crossorigin="anonymous" />
 
   <!-- Favicons -->
   <link rel="apple-touch-icon-precomposed" sizes="57x57" href="img/apple-touch-icon-57x57.png" />
@@ -77,12 +76,12 @@
     <div class="container">
       <div class="row">
         <div class="previous-project p-0">
-          <a href="/marxfood-recipes.html">
+          <a href="/marxfood-recipes">
             <p class="text-center"><i class="fas fa-arrow-left"></i> <br />prev</p>
           </a>
         </div>
         <div class="next-project p-0">
-          <a href="/nafoods-rebrand.html">
+          <a href="/nafoods-rebrand">
             <p><i class="fas fa-arrow-right"></i><br />next</p>
           </a>
         </div>
@@ -285,10 +284,7 @@
 
                 <div class="row">
                   <div class="col-lg-8 mx-auto">
-                    <form id="contact-form" method="post" action="contact.php" role="form">
-                      <div class="messages text-center">
-                      </div>
-
+                    <form id="contact-form" method="post" action="contact.php" role="form" onsubmit="return validateRecaptcha();">
                       <div class="controls">
 
                         <div class="row">
@@ -333,6 +329,8 @@
                               <div class="help-block with-errors"></div>
                             </div>
                           </div>
+                        </div>
+                        <div class="messages text-center">
                         </div>
 
                       </div>
@@ -408,7 +406,7 @@
   <script src="validator.js"></script>
   <script src="contact.js"></script>
 
-  <script src='https://www.google.com/recaptcha/api.js'></script>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/plugins/CSSPlugin.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
@@ -427,8 +425,17 @@
   <script src="js/grayscale.js"></script>
 
 
-  <!-- Live Reload -->
-  <script src="http://localhost:35729/livereload.js"></script>
+  <script type="text/javascript">
+  function validateRecaptcha() {
+      var response = grecaptcha.getResponse();
+      if (response.length === 0) {
+          alert("Please Check reCAPTCHA box.");
+          return false;
+      } else {
+          return true;
+      }
+    }
+  </script>
 
 
 

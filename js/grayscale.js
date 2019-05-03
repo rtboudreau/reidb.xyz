@@ -28,6 +28,19 @@ document.addEventListener("DOMContentLoaded", function(event) {
       }, 500);
     });
 
+    // image popover
+    $(document).ready(function(){
+  	 $('[data-toggle="popover"]').popover({
+            //trigger: 'focus',
+  		  trigger: 'hover',
+            html: true,
+            content: function () {
+  				return '<img class="img-fluid" src="'+$(this).data('img') + '" />';
+            },
+            title: 'Toolbox'
+      })
+  });
+
 
     // rotates hero message
     $(document).ready(function() {
@@ -185,7 +198,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
           tweenChanges: true
         })
         .setTween(tween)
-        .reverse(true)
+        .reverse(false)
         .addTo(controller);
 
 

@@ -3,8 +3,6 @@
  * Copyright 2013-2017 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-grayscale/blob/master/LICENSE)
  */
-
-
 .sticky-top {
   top: 10%;
   z-index: 100;
@@ -36,7 +34,7 @@ footer {
   overflow: hidden;
 }
 
-ul{
+ul {
   padding: 0;
 }
 
@@ -75,7 +73,7 @@ p a {
   background-position: 0 18px;
   background-repeat: no-repeat;
   -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   padding: 0;
   color: #0a1529;
 }
@@ -104,14 +102,14 @@ a:focus, a:hover {
   text-decoration: none;
 }
 
-li a{
+li a {
   -webkit-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
   color: #4cab9e;
 }
 
 @media (min-width: 768px) {
-  li a{
+  li a {
     color: #1c1b20;
   }
 }
@@ -147,7 +145,7 @@ li a{
 }
 
 .title-link {
-    font-size: 1.2rem;
+  font-size: 1.2rem;
 }
 
 /*
@@ -218,7 +216,6 @@ li a{
     color: white;
   }
 } */
-
 .masthead {
   display: table;
   height: 100%;
@@ -236,7 +233,6 @@ li a{
   display: table-cell;
   vertical-align: middle;
 }
-
 
 .masthead .intro-body .brand-heading {
   font-family: 'Chivo', sans-serif;
@@ -316,15 +312,15 @@ li a{
   border-radius: 0;
 }
 
-.btn:hover{
+.btn:hover {
   color: #4caa9e;
   background: #1b1a20;
 }
 
 .btn-contact {
-    background: #1b1a20;
-    color: #fff;
-    border: 0;
+  background: #1b1a20;
+  color: #fff;
+  border: 0;
 }
 
 .btn-contact.disabled, .btn-contact:disabled {
@@ -332,8 +328,6 @@ li a{
   color: #fff;
   border: 0;
 }
-
-
 
 .btn-default {
   color: #42DCA3;
@@ -371,7 +365,7 @@ ul.banner-social-buttons {
 }
 
 .sittingme {
-  z-index: 100;
+  z-index: 200;
   position: relative;
   left: 50px;
 }
@@ -442,7 +436,7 @@ ul.banner-social-buttons {
   background-position: 0 29px;
   background-repeat: no-repeat;
   -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   padding: 0;
   color: #0a1529;
 }
@@ -473,8 +467,8 @@ ul.banner-social-buttons {
 /* Work */
 .no-gutter-card-deck.card-columns {
   -webkit-column-gap: 0;
-     -moz-column-gap: 0;
-          column-gap: 0;
+  -moz-column-gap: 0;
+  column-gap: 0;
 }
 
 .no-gutter-card-deck>.card {
@@ -512,29 +506,34 @@ ul.banner-social-buttons {
   transform: translate(-50%, -50%);
   text-align: center;
 }
+
 @media (min-width: 768px) {
   .overlay-text {
     width: 95%;
   }
 }
+
 @media (min-width: 992px) {
   .overlay-text {
     width: 75%;
   }
 }
 
+.card {
+  border: 0;
+}
+
 .skills-container {
   padding: 60px 20px;
   overflow: hidden;
-  background-color:#1c1b20;
+  background-color: #1c1b20;
 }
+
 @media (min-width: 992px) {
   .skills-container {
     padding: 60px;
   }
 }
-
-
 
 .skills-container h4 {
   color: #fff;
@@ -555,6 +554,20 @@ ul.banner-social-buttons {
   fill: none;
   stroke: #4cab9e;
   stroke-width: 5px;
+}
+
+/* MODALS */
+.modal-header {
+  padding: 1rem 1rem 0;
+  border-bottom: 0;
+}
+.modal-footer{
+  border-top:0;
+}
+
+.modal-btn {
+  margin-top: -65px;
+  z-index: 100;
 }
 
 footer {
@@ -658,8 +671,6 @@ ul#navi li {
   }
 }
 
-
-
 ul#navi .home {
   position: fixed;
   top: 0;
@@ -684,18 +695,17 @@ ul#navi .about {
   left: 0;
 }
 
-
-
 /* social and contact */
 .list-socials {
   position: absolute;
   z-index: 200;
-  top:10px;
+  top: 10px;
   list-style: none;
 }
+
 @media (min-width: 768px) {
   .list-socials {
-    top:-8px;
+    top: -8px;
   }
 }
 
@@ -1054,7 +1064,7 @@ input:-webkit-autofill {
   transform: scale(.75, 0.65);
   /* Firefox 16+, IE 10+, Opera */
   -webkit-transform-origin: center;
-          transform-origin: center;
+  transform-origin: center;
   opacity: .4;
   -webkit-transition: ease-in-out .85s;
   transition: ease-in-out .85s;
@@ -1097,8 +1107,6 @@ input:-webkit-autofill {
 /* ==========================================================================
    interior pages
    ========================================================================== */
-
-
 .project-navigation {
   position: fixed;
   width: 100%;
@@ -1107,27 +1115,27 @@ input:-webkit-autofill {
   top: 46%;
 }
 
-.next-project, .previous-project{
+.next-project, .previous-project {
   margin: 0 auto;
 }
 
 .next-project {
-    right: 3px;
-    position: absolute;
-    color:#4cab9e;
-    text-align: center;
-    width: 50px;
-
+  right: 3px;
+  position: absolute;
+  color: #4cab9e;
+  text-align: center;
+  width: 50px;
 }
+
 .previous-project {
-    left: 3px;
-    position: absolute;
-    color:#4cab9e;
-    text-align: center;
-    width: 50px;
+  left: 3px;
+  position: absolute;
+  color: #4cab9e;
+  text-align: center;
+  width: 50px;
 }
 
-.project-navigation p{
+.project-navigation p {
   font-size: .75rem;
 }
 
@@ -1135,20 +1143,23 @@ input:-webkit-autofill {
   width: 50px;
   height: 50px;
   border-radius: 25px;
-  -webkit-box-shadow: 3px 4px 5px 0px rgba(0,0,0,0.5);
-  box-shadow: 3px 4px 5px 0px rgba(0,0,0,0.5);
+  -webkit-box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.5);
 }
-.na-navy{
+
+.na-navy {
   background: #2a3034;
 }
-.na-cream{
+
+.na-cream {
   background: #fefdeb;
 }
-.na-gold{
+
+.na-gold {
   background: #a08e60;
 }
 
-.circle p{
+.circle p {
   font-size: 12px;
   /* line-height: 1.6; */
   /* margin: 0 0 35px; */
@@ -1156,9 +1167,6 @@ input:-webkit-autofill {
   position: absolute;
   text-align: center;
 }
-
-
-
 
 /* ==========================================================================
    Helper classes

@@ -41,7 +41,7 @@
   <!-- Custom styles for this template -->
   <link href="css/style.css" rel="stylesheet">
   <link href="css/sprite.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" integrity="sha256-j+P6EZJVrbXgwSR5Mx+eCS6FvP9Wq27MBRC/ogVriY0=" crossorigin="anonymous" />
+
 
   <!-- Favicons -->
   <link rel="apple-touch-icon-precomposed" sizes="57x57" href="img/apple-touch-icon-57x57.png" />
@@ -52,7 +52,7 @@
   <link rel="apple-touch-icon-precomposed" sizes="152x152" href="img/apple-touch-icon-152x152.png" />
   <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32" />
   <link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16" />
-  <meta name="application-name" content="Reid Boudreau"/>
+  <meta name="application-name" content="Reid Boudreau" />
   <meta name="msapplication-TileColor" content="#FFFFFF" />
   <meta name="msapplication-TileImage" content="img/mstile-144x144.png" />
 
@@ -102,7 +102,7 @@
           </a>
         </div>
         <div class="next-project p-0">
-          <a href="/marxfoods-website.html">
+          <a href="/marxfoods-website">
             <p><i class="fas fa-arrow-right"></i><br />next</p>
           </a>
         </div>
@@ -116,7 +116,7 @@
       <div class="row">
         <div class="col-md-8 mx-auto text-center">
           <h1><a href="https://to--dos.herokuapp.com/login" target="_blank">To-Dos App <i class="fas fa-external-link-alt title-link"></i></a></h1>
-          <p>To-Dos is a fully responsive Ruby on Rails web application with clean design and intuitive UX.  This is a personal project of mine that I undertook in order to learn Rails and one that will continue to evolve.</p>
+          <p>To-Dos is a fully responsive Ruby on Rails web application with clean design and intuitive UX. This is a personal project of mine that I undertook in order to learn Rails and one that will continue to evolve.</p>
         </div>
       </div>
     </div>
@@ -161,7 +161,8 @@
                    17.839,7.715L23.433,2.121L29.026,7.715L34.619,2.121L40.212,7.715L45.806,2.121" />
           </svg>
           <div class="p-wrapper">
-            <p class="pl-3">I tasked myself with developing a Rails application that was light, elegant, responsive, and easy to use.  I settled on building To-Dos because it checked the four basic functions that make up CRUD.  Users are able to create accounts, to do lists, and to do list items.  They are able to view and edit all of their to do lists and individual items within each to do list.  Users are also able to destroy any items on a to do list or the to do list itself.</p>
+            <p class="pl-3">I tasked myself with developing a Rails application that was light, elegant, responsive, and easy to use. I settled on building To-Dos because it checked the four basic functions that make up CRUD. Users are able to create
+              accounts, to do lists, and to do list items. They are able to view and edit all of their to do lists and individual items within each to do list. Users are also able to destroy any items on a to do list or the to do list itself.</p>
           </div>
           <div class="p-wrapper">
             <p class="pl-3">The adjacent video gives a brief walkthrough of To-Dos including its functionality and design.
@@ -207,15 +208,15 @@
                 </i>
                 <ul class="mt-2">
                   <li><span class="icon icon-rails" title="Ruby on Rails"></span>
-                  <span class="icon icon-html5" title="HTMl5"></span>
-                  <span class="icon icon-css3" title="CSS3"></span></li>
+                    <span class="icon icon-html5" title="HTMl5"></span>
+                    <span class="icon icon-css3" title="CSS3"></span></li>
 
                   <li><span class="icon icon-bootstrap" title="Bootstrap"></span>
-                  <span class="icon icon-jquery" title="Jquery"></span>
-                  <span class="icon icon-sass" title="Sass"></span></li>
+                    <span class="icon icon-jquery" title="Jquery"></span>
+                    <span class="icon icon-sass" title="Sass"></span></li>
 
                   <li>
-                  <span class="icon icon-git" title="Git"></span></li>
+                    <span class="icon icon-git" title="Git"></span></li>
                 </ul>
               </div>
 
@@ -244,9 +245,7 @@
 
                 <div class="row">
                   <div class="col-lg-8 mx-auto">
-                    <form id="contact-form" method="post" action="contact.php" role="form">
-                      <div class="messages text-center">
-                      </div>
+                    <form id="contact-form" method="post" action="contact.php" role="form" onsubmit="return validateRecaptcha();">
                       <div class="controls">
 
                         <div class="row">
@@ -292,6 +291,8 @@
                             </div>
                           </div>
                         </div>
+                        <div class="messages text-center">
+                        </div>
 
                       </div>
 
@@ -313,6 +314,7 @@
       </div>
     </div>
   </section>
+
 
   <footer>
     <div class="container">
@@ -365,7 +367,7 @@
   <script src="validator.js"></script>
   <script src="contact.js"></script>
 
-  <script src='https://www.google.com/recaptcha/api.js'></script>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/plugins/CSSPlugin.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
@@ -384,8 +386,17 @@
   <script src="js/grayscale.js"></script>
 
 
-  <!-- Live Reload -->
-  <script src="http://localhost:35729/livereload.js"></script>
+  <script type="text/javascript">
+    function validateRecaptcha() {
+      var response = grecaptcha.getResponse();
+      if (response.length === 0) {
+        alert("Please Check reCAPTCHA box.");
+        return false;
+      } else {
+        return true;
+      }
+    }
+  </script>
 
 
 
