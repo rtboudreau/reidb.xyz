@@ -465,6 +465,11 @@ ul.banner-social-buttons {
 }
 
 /* Work */
+
+.card {
+  border: 0;
+  background: #f8f8f8;
+}
 .no-gutter-card-deck.card-columns {
   -webkit-column-gap: 0;
   -moz-column-gap: 0;
@@ -519,9 +524,7 @@ ul.banner-social-buttons {
   }
 }
 
-.card {
-  border: 0;
-}
+
 
 .skills-container {
   padding: 60px 20px;
