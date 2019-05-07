@@ -210,73 +210,25 @@ document.addEventListener("DOMContentLoaded", function(event) {
         .setTween(tween)
         .reverse(false)
         .addTo(controller);
-
-
-      // svg animation
-      function pathPrepare($el) {
-        var lineLength = $el[0].getTotalLength();
-        $el.css("stroke-dasharray", lineLength);
-        $el.css("stroke-dashoffset", lineLength);
-      }
-
-      var $squiggle1 = $("path#squiggle1");
-
-      // prepare SVG
-      pathPrepare($squiggle1);
-
-      // build tween
-      var tween = new TimelineMax()
-        .add(TweenMax.to($squiggle1, 0.9, {
-          strokeDashoffset: 0,
-          ease: Linear.easeNone
-        })) // draw word for 0.9
-        .add(TweenMax.to($squiggle1, 1, {
-          stroke: "#4cab9e",
-          ease: Linear.easeNone
-        }), 0); // change color during the whole thing
-
-      // build scene
-      var scene = new ScrollMagic.Scene({
-          triggerElement: "#squiggle1_trigger",
-          duration: 350,
-          tweenChanges: true
-        })
-        .setTween(tween)
-        .addTo(controller);
-
-      // svg animation
-      function pathPrepare($el) {
-        var lineLength = $el[0].getTotalLength();
-        $el.css("stroke-dasharray", lineLength);
-        $el.css("stroke-dashoffset", lineLength);
-      }
-
-      var $squiggle2 = $("path#squiggle2");
-
-      // prepare SVG
-      pathPrepare($squiggle2);
-
-      // build tween
-      var tween = new TimelineMax()
-        .add(TweenMax.to($squiggle2, 0.9, {
-          strokeDashoffset: 0,
-          ease: Linear.easeNone
-        })) // draw word for 0.9
-        .add(TweenMax.to($squiggle2, 1, {
-          stroke: "#4cab9e",
-          ease: Linear.easeNone
-        }), 0); // change color during the whole thing
-
-      // build scene
-      var scene = new ScrollMagic.Scene({
-          triggerElement: "#squiggle2_trigger",
-          duration: 350,
-          tweenChanges: true
-        })
-        .setTween(tween)
-        .addTo(controller);
-
     });
+
+    //svg squiggle animation
+  $('path').each( function(i,v){
+    var lineLength = this.getTotalLength();
+    $(this).css("stroke-dasharray", lineLength);
+    $(this).css("stroke-dashoffset", lineLength);
+
+    window['tl_path_'+i] = new TimelineMax({paused:true});
+    window['tl_path_'+i].to( $(this), 0.9, { strokeDashoffset: 0, ease: Linear.easeNone } );
+
+    window['waypoint_'+i] = new Waypoint({
+      element: $(this),
+      offset: 550,
+      handler: function(dir) {
+        dir=='down'?window['tl_path_'+i].play():window['tl_path_'+i].reverse();
+      }
+    })
+  });
 
     //contact form add class
 
