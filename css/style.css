@@ -524,7 +524,7 @@ ul.banner-social-buttons {
   }
 }
 
-
+.sr-fade { visibility: hidden }
 
 .skills-container {
   padding: 60px 20px;
@@ -747,7 +747,7 @@ ul.list-socials li {
 
 .form-control {
   display: block;
-  margin-top: 2rem;
+  margin-top: 0;
   width: 100%;
   padding: 5px 12px;
   font-size: 14px;
@@ -788,7 +788,7 @@ ul.list-socials li {
 .message {
   position: absolute;
   left: 20px;
-  top: 40px;
+  top: 20px;
   font-family: 'Chivo', sans-serif;
   color: #1c1b20;
   font-size: 1rem;
@@ -806,8 +806,8 @@ textarea {
   background: #FFF;
   border-width: 0 0 2px 0;
   border-color: #1c1b20;
-  margin-top: 2rem;
-  padding: 5px 12px;
+  margin-top: .5rem;
+  padding: 10px 12px 0;
 }
 
 textarea, input, button {
