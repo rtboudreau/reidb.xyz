@@ -275,7 +275,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
       offset: 54
     });
 
-
+    // fade in for scrollreveal
+    ScrollReveal().reveal('.sr-fade', {
+    opacity: 0,
+    duration: 600,
+    easing: 'ease-in'
+    });
 
 
   })(jQuery); // End of use strict
