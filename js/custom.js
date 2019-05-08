@@ -282,6 +282,23 @@ document.addEventListener("DOMContentLoaded", function(event) {
     easing: 'ease-in'
     });
 
+    //sticky title link
+
+      $(function(){
+        if($('body').is('.interior')){
+          var stickyTitle = $('.title').offset().top;
+
+            $(window).scroll(function() {
+              if ($(window).scrollTop() > stickyTitle) {
+                  $('.title').addClass('affix');
+              }
+              else {
+                  $('.title').removeClass('affix');
+              }
+            });
+        }
+      });
+
 
   })(jQuery); // End of use strict
 

@@ -105,12 +105,36 @@ li a {
     color: #1c1b20;
   }
 }
-
+.title {
+  z-index: 400;
+  position: relative;
+}
+.title.affix {
+  position: fixed;
+  top: 13px;
+  z-index: 400;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  font-size: 1rem;
+}
 
 .sticky-top {
   top: 10%;
   z-index: 100;
 }
+
+ .sticky{
+   position: -webkit-sticky;
+   position: -moz-sticky;
+   position: -ms-sticky;
+   position: -0-sticky;
+   position: sticky;
+   top:15px;
+
+
+
+ }
 
 .sec-title {
   font-size: 5rem;
@@ -423,6 +447,7 @@ ul.banner-social-buttons {
 
 .card:hover .overlay {
   opacity: 1;
+  cursor: pointer;
 }
 
 .overlay-text {
