@@ -26,6 +26,7 @@
       <meta name="keywords" content="reid, boudreau, developer, design, graphic, layout, photoshop, illustrator, ux">
       <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
       <meta name="language" content="English">
+<meta name="theme-color" content="#4cab9e"/>
       <link rel="canonical" href="https://reidb.xyz/creative" />
       <!-- Bootstrap core CSS -->
       <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -58,51 +59,54 @@
       <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PGFN3MB" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <!-- End Google Tag Manager (noscript) -->
       <!-- Navigation -->
-      <nav>
-         <ul id="navi">
-            <li class="home"><a class="nav-link js-scroll-trigger" href="/">home</a></li>
-            <li class="about"><a class="nav-link js-scroll-trigger" href="/#about">about</a></li>
-            <li class="contact"><a data-toggle="collapse" class="nav-link active primary-link" data-parent="#accordion" href="#collapseOne">contact</a></li>
-            <li class="work"><a class="nav-link js-scroll-trigger" href="/#work">work</a></li>
-         </ul>
-      </nav>
+
+      <header class="cd-auto-hide-header">
+         <div class="logo">
+           <a href="/" class="nav-link js-scroll-trigger" >
+             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="46.867px" height="9.836px" viewBox="0 0 46.867 9.836" enable-background="new 0 0 46.867 9.836" xml:space="preserve" style="">
+            <path fill="none" stroke="#4CAB9E" stroke-width="3" stroke-miterlimit="10" d="M1.06,2.121l5.594,5.594l5.593-5.594l5.592,5.594
+            	l5.594-5.594l5.592,5.594l5.594-5.594l5.593,5.594l5.595-5.594" class="GYzBOdQu_0"></path>
+            <style>.GYzBOdQu_0{stroke-dasharray:64 66;stroke-dashoffset:65;animation:GYzBOdQu_draw 1333ms ease-in 0ms forwards;}@keyframes GYzBOdQu_draw{100%{stroke-dashoffset:0;}}@keyframes GYzBOdQu_fade{0%{stroke-opacity:1;}93.54838709677419%{stroke-opacity:1;}100%{stroke-opacity:0;}}</style></svg>
+          </a>
+        </div>
+
+         <nav class="cd-primary-nav">
+            <a href="#cd-navigation" class="nav-trigger">
+               <span>
+                  <em aria-hidden="true"></em>
+               </span>
+            </a> <!-- .nav-trigger -->
+
+            <ul id="cd-navigation">
+              <li class="home"><a class="nav-link js-scroll-trigger" href="/">home</a></li>
+              <li class="work"><a class="nav-link js-scroll-trigger" href="/#work">work</a></li>
+              <li class="about"><a class="nav-link js-scroll-trigger" href="/#about">about</a></li>
+              <li class="contact"><a data-toggle="collapse" class="nav-link primary-link" data-parent="#accordion" href="#collapseOne">contact</a></li>
+            </ul>
+         </nav> <!-- .cd-primary-nav -->
+      </header> <!-- .cd-auto-hide-header -->
+
       <div>
-         <ul class="list-socials">
-            <li>
-               <a href="https://github.com/rtboudreau" rel="noreferrer" target="_blank">
-               <span class="icon icon-github" title="Github"></span>
-               </a>
-            </li>
-            <li>
-               <a href="https://www.linkedin.com/in/rtboudreau/" rel="noreferrer" target="_blank">
-               <span class="icon icon-linkedin" title="LinkedIn"></span>
-               </a>
-            </li>
-            <li>
-               <a href="https://www.instagram.com/just_reidb/" rel="noreferrer" target="_blank">
-               <span class="icon icon-instagram" title="Instagram"></span>
-               </a>
-            </li>
-         </ul>
+        <ul class="list-socials">
+          <li>
+            <a href="https://github.com/rtboudreau" rel="noreferrer" target="_blank">
+              <span class="icon icon-github" title="Github"></span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/rtboudreau/" rel="noreferrer" target="_blank">
+              <span class="icon icon-linkedin" title="LinkedIn"></span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/just_reidb/" rel="noreferrer" target="_blank">
+              <span class="icon icon-instagram" title="Instagram"></span>
+            </a>
+          </li>
+        </ul>
       </div>
-      <section class="project-navigation p-0 d-none d-sm-block">
-         <div class="container">
-            <div class="row">
-               <div class="previous-project p-0">
-                  <a href="/ferrytales-website">
-                     <p class="text-center"><i class="fas fa-arrow-left"></i> <br />prev</p>
-                  </a>
-               </div>
-               <div class="next-project p-0">
-                  <a href="/">
-                     <p class="text-center"><i class="fas fa-times"></i> <br />exit</p>
-                  </a>
-               </div>
-            </div>
-         </div>
-      </section>
       <!-- Work Section -->
-      <section class="work-section pb-5 pb-md-0  sr-fade">
+      <section class="work-section sr-fade">
          <div class="container my-5">
             <div class="row">
                <div class="col-md-8 mx-auto text-center">
@@ -111,185 +115,213 @@
                </div>
             </div>
          </div>
-         <div class="container-fluid no-gutters">
+         <div class="container-fluid">
+           <div class="row mt-5">
+              <div class="col-12 skills-container">
+                 <div class="container">
+                    <div class="row">
+                       <div class="col-md-6 offset-md-2">
+                          <h4 class="mb-0">My Role </h4>
+                          <i class="waves">
+                             <svg xmlns="http://www.w3.org/2000/svg" width="33" height="7" viewBox="0 0 73.94 14.19">
+                                <polyline points="2.83 2.83 11.36 11.36 19.9 2.83 28.43 11.36 36.97 2.83 45.5 11.36 54.04 2.83 62.58 11.36 71.11 2.83"></polyline>
+                             </svg>
+                          </i>
+                          <ul class="mt-2">
+                             <li>Logo, print, and digital designs.</li>
+                             <li>Layout and color selection.</li>
+                             <li>Illustration.</li>
+                          </ul>
+                       </div>
+                       <div class="col-md-4">
+                          <h4 class="mb-0">Tools</h4>
+                          <i class="waves">
+                             <svg xmlns="http://www.w3.org/2000/svg" width="33" height="7" viewBox="0 0 73.94 14.19">
+                                <polyline points="2.83 2.83 11.36 11.36 19.9 2.83 28.43 11.36 36.97 2.83 45.5 11.36 54.04 2.83 62.58 11.36 71.11 2.83"></polyline>
+                             </svg>
+                          </i>
+                          <ul class="mt-2">
+                             <li><span class="icon icon-illustrator" title="Adobe Illustrator"></span>
+                                <span class="icon icon-photoshop" title="Adobe Photoshop"></span>
+                             </li>
+                          </ul>
+                       </div>
+                    </div>
+                 </div>
+              </div>
+           </div>
+         </div>
+         <div class="container-fluid no-gutters mt-5">
             <div class="row">
-               <div class="col-md-10 col-lg-8 offset-lg-2 mb-4 text-center">
+               <div class="col-md-10 col-lg-8 offset-lg-2 mb-4 text-center sr-fade">
                   <img src="img/drips_1200.jpg" class="img-fluid" alt="Mixed media - drips set against plateaus">
                </div>
                <div class="col-md-10 col-lg-8 offset-md-1 offset-lg-2">
-                  <div class="card-columns">
-                     <div class="card">
+                  <div class="card-columns border-0">
+                     <div class="card border-0 sr-fade">
                         <!-- Card content -->
-                        <img src="img/quailDu_500.jpg" class="img-fluid sr-fade" alt="Quail du roi logo">
+                        <img src="img/quailDu_500.jpg" class="img-fluid " alt="Quail du roi logo">
                      </div>
-                     <div class="card">
+                     <div class="card border-0 sr-fade">
                         <!-- Card content -->
-                        <img src="img/nyePromo_500.jpg" class="img-fluid sr-fade" alt="Marx Foods New Years Promo with oyster">
+                        <img src="img/nyePromo_500.jpg" class="img-fluid " alt="Marx Foods New Years Promo with oyster">
                      </div>
-                     <div class="card">
+                     <div class="card border-0 sr-fade">
                         <!-- Card content -->
-                        <img src="img/seaPine_500.jpg" class="img-fluid sr-fade" alt="Sea Pine Restaurant Logo">
+                        <img src="img/seaPine_500.jpg" class="img-fluid " alt="Sea Pine Restaurant Logo">
                      </div>
-                     <div class="card">
+                     <div class="card border-0 sr-fade">
                         <!-- Card content -->
-                        <img src="img/strillogy_500.jpg" class="img-fluid sr-fade" alt="Strillogy Logo">
+                        <img src="img/strillogy_500.jpg" class="img-fluid " alt="Strillogy Logo">
                      </div>
-                     <div class="card">
+                     <div class="card border-0 sr-fade">
                         <!-- Card content -->
-                        <img src="img/polyPortraitGreen_500.jpg" class="img-fluid sr-fade" alt="Man in Adidas jacket">
+                        <img src="img/polyPortraitGreen_500.jpg" class="img-fluid " alt="Man in Adidas jacket">
                      </div>
-                     <div class="card">
+                     <div class="card border-0 sr-fade">
                         <!-- Card content -->
-                        <img src="img/polyPortraitPink_500.jpg" class="img-fluid sr-fade" alt="Woman looking to the side">
+                        <img src="img/polyPortraitPink_500.jpg" class="img-fluid " alt="Woman looking to the side">
                      </div>
-                     <div class="card">
+                     <div class="card border-0 sr-fade">
                         <!-- Card content -->
-                        <img src="img/archPoster_print_800.jpg" class="img-fluid sr-fade" alt="Architecture drawings">
+                        <img src="img/archPoster_print_800.jpg" class="img-fluid " alt="Architecture drawings">
                      </div>
-                     <div class="card">
+                     <div class="card border-0 sr-fade">
                         <!-- Card content -->
-                        <img src="img/spatchcock_500.jpg" class="img-fluid sr-fade" alt="Chicken on plate with napkin and knife">
+                        <img src="img/spatchcock_500.jpg" class="img-fluid " alt="Chicken on plate with napkin and knife">
                      </div>
-                     <div class="card">
+                     <div class="card border-0 sr-fade">
                         <!-- Card content -->
-                        <img src="img/birth_announcement_500.jpg" class="img-fluid sr-fade" alt="Baby Announcement">
+                        <img src="img/birth_announcement_500.jpg" class="img-fluid " alt="Baby Announcement">
                      </div>
-                     <div class="card">
+                     <div class="card border-0 sr-fade">
                         <!-- Card content -->
-                        <img src="img/seaEagle_500.jpg" class="img-fluid sr-fade" alt="Sea Eagle Restaurant Star">
+                        <img src="img/seaEagle_500.jpg" class="img-fluid " alt="Sea Eagle Restaurant Star">
                      </div>
-                     <div class="card">
+                     <div class="card border-0 sr-fade">
                         <!-- Card content -->
-                        <img src="img/chiliesLabel_500.jpg" class="img-fluid sr-fade" alt="Vintage Chilie Pepper label">
+                        <img src="img/chiliesLabel_500.jpg" class="img-fluid " alt="Vintage Chilie Pepper label">
                      </div>
-                     <div class="card">
+                     <div class="card border-0 sr-fade">
                         <!-- Card content -->
-                        <img src="img/huskySchedule_800.jpg" class="img-fluid sr-fade" alt="UDub football schedue 2014">
+                        <img src="img/huskySchedule_800.jpg" class="img-fluid " alt="UDub football schedue 2014">
                      </div>
-                     <div class="card">
+                     <div class="card border-0 sr-fade">
                         <!-- Card content -->
-                        <img src="img/polyPortraitTan_500.jpg" class="img-fluid sr-fade" alt="Woman in Glasses">
+                        <img src="img/polyPortraitTan_500.jpg" class="img-fluid " alt="Woman in Glasses">
                      </div>
-                     <div class="card">
+                     <div class="card border-0 sr-fade">
                         <!-- Card content -->
-                        <img src="img/iceCreamPoster_print_800.jpg" class="img-fluid sr-fade" alt="Ice Cream Illustrations for event">
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <div class="row mt-5">
-               <div class="col-12 skills-container">
-                  <div class="container">
-                     <div class="row">
-                        <div class="col-12">
-                        </div>
-                     </div>
-                     <div class="row">
-                        <div class="col-md-6">
-                           <h4 class="mb-0">My Role </h4>
-                           <i class="waves">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="33" height="7" viewBox="0 0 73.94 14.19">
-                                 <polyline points="2.83 2.83 11.36 11.36 19.9 2.83 28.43 11.36 36.97 2.83 45.5 11.36 54.04 2.83 62.58 11.36 71.11 2.83"></polyline>
-                              </svg>
-                           </i>
-                           <ul class="mt-2">
-                              <li>Logo, print, and digital designs.</li>
-                              <li>Layout and color selection.</li>
-                              <li>Illustration.</li>
-                           </ul>
-                        </div>
-                        <div class="col-md-4 offset-md-2">
-                           <h4 class="mb-0">Tools</h4>
-                           <i class="waves">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="33" height="7" viewBox="0 0 73.94 14.19">
-                                 <polyline points="2.83 2.83 11.36 11.36 19.9 2.83 28.43 11.36 36.97 2.83 45.5 11.36 54.04 2.83 62.58 11.36 71.11 2.83"></polyline>
-                              </svg>
-                           </i>
-                           <ul class="mt-2">
-                              <li><span class="icon icon-illustrator" title="Adobe Illustrator"></span>
-                                 <span class="icon icon-photoshop" title="Adobe Photoshop"></span>
-                              </li>
-                           </ul>
-                        </div>
+                        <img src="img/iceCreamPoster_print_800.jpg" class="img-fluid " alt="Ice Cream Illustrations for event">
                      </div>
                   </div>
                </div>
             </div>
          </div>
       </section>
+
+      <section class="project-navigation p-2 ">
+        <div class="container">
+          <div class="row mt-5">
+            <div class="col-12 text-center">
+              <div class="btn-group btn-group-sm text-center" role="group" aria-label="Basic example">
+                <a class="btn btn-reid" href="ferrytales-website"><i class="fas fa-arrow-left"></i> prev</a>
+                <a class="btn btn-reid" href="/"><i class="fas fa-home"></i> </a>
+                <a class="btn btn-reid" href="/#work">exit <i class="fas fa-times"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <!-- contact -->
       <section id="contact" class="pb-4 pt-0">
-         <div class="container-fluid">
-            <div class="panel-group" id="accordion">
-               <div class="panel panel-default">
-                  <div id="collapseOne" class="panel-collapse collapse">
-                     <div class="panel-body">
-                        <div class="container">
-                           <div class="row">
-                              <div class="col-lg-8 mx-auto">
-                                 <form id="contact-form" method="post" action="contact.php" role="form" onsubmit="return validateRecaptcha();">
-                                    <div class="controls">
-                                       <div class="row pt-5">
-                                          <div class="col-6">
-                                             <div class="form-group">
-                                                <input id="form_firstName" type="text" name="firstName" class="form-control input-text js-input" required="required" data-error="First name is required.">
-                                                <label class="label" for="form_firstName">First Name *</label>
-                                                <div class="help-block with-errors"></div>
-                                             </div>
-                                          </div>
-                                          <div class="col-6">
-                                             <div class="form-group">
-                                                <input id="form_lastName" type="text" name="lastName" class="form-control input-text js-input" required="required" data-error="Last Name is required.">
-                                                <label class="label" for="form_lastName">Last Name *</label>
-                                                <div class="help-block with-errors"></div>
-                                             </div>
-                                          </div>
-                                       </div>
-                                       <div class="row">
-                                          <div class="col-md-6">
-                                             <div class="form-group">
-                                                <input id="form_email" type="email" name="email" class="form-control input-text js-input" required="required" data-error="Valid email is required.">
-                                                <label class="label" for="form_email">Email *</label>
-                                                <div class="help-block with-errors"></div>
-                                             </div>
-                                          </div>
-                                          <div class="col-md-6">
-                                             <div class="form-group">
-                                                <input id="form_phone" type="tel" maxlength="14" name="phone" class="form-control input-text js-input">
-                                                <label class="label" for="form_phone">Telephone</label>
-                                                <div class="help-block with-errors"></div>
-                                             </div>
-                                          </div>
-                                       </div>
-                                       <div class="row">
-                                          <div class="col">
-                                             <div>
-                                                <textarea id="form_message" type="text" name="message" class="input-text js-input" rows="4" style="min-width: 100%" required="required" data-error="Please,leave us a message."></textarea>
-                                                <label class="label message" for="form_message">Message *</label>
-                                                <div class="help-block with-errors"></div>
-                                             </div>
-                                          </div>
-                                       </div>
-                                       <div class="messages text-center">
-                                       </div>
-                                    </div>
-                                    <div class="row">
-                                       <div class="col-md-12 text-center">
-                                          <div class="g-recaptcha d-inline-block" data-sitekey="6LdFfkMUAAAAAE70s3jLktId8bFvQO2UUU49w8Vj"></div>
-                                          <br />
-                                          <input type="submit" class="btn btn-contact btn-send d-block mx-auto mt-3 mb-5" value="Send message">
-                                       </div>
-                                    </div>
-                                 </form>
+        <div class="container-fluid no-gutters">
+
+          <div class="panel-group" id="accordion">
+            <div class="panel panel-default">
+
+              <div id="collapseOne" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-lg-8 mx-auto">
+                        <form id="contact-form" method="post" action="contact.php" role="form" onsubmit="return validateRecaptcha();">
+                          <div class="controls">
+
+                            <div class="row pt-5">
+                              <div class="col-12 pb-0">
+                                <div class="text-right">
+                                  <span class="close-btn"><a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" title="Close"><i class="fas fa-times"></i></a></span>
+                                </div>
                               </div>
-                           </div>
-                        </div>
-                     </div>
+
+                              <div class="col-6">
+                                <div class="form-group">
+                                  <input id="form_firstName" type="text" name="firstName" class="form-control input-text js-input" required="required" data-error="First name is required.">
+                                  <label class="label" for="form_firstName">First Name *</label>
+                                  <div class="help-block with-errors"></div>
+                                </div>
+                              </div>
+                              <div class="col-6">
+                                <div class="form-group">
+                                  <input id="form_lastName" type="text" name="lastName" class="form-control input-text js-input" required="required" data-error="Last Name is required.">
+                                  <label class="label" for="form_lastName">Last Name *</label>
+                                  <div class="help-block with-errors"></div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="row">
+                              <div class="col-md-6">
+                                <div class="form-group">
+                                  <input id="form_email" type="email" name="email" class="form-control input-text js-input" required="required" data-error="Valid email is required.">
+                                  <label class="label" for="form_email">Email *</label>
+                                  <div class="help-block with-errors"></div>
+                                </div>
+                              </div>
+                              <div class="col-md-6">
+                                <div class="form-group">
+                                  <input id="form_phone" type="tel" maxlength="14" name="phone" class="form-control input-text js-input">
+                                  <label class="label" for="form_phone">Telephone</label>
+                                  <div class="help-block with-errors"></div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="row">
+                              <div class="col">
+                                <div>
+                                  <textarea id="form_message" type="text" name="message" class="input-text js-input" rows="4" style="min-width: 100%" required="required" data-error="Please,leave us a message."></textarea>
+                                  <label class="label message" for="form_message">Message *</label>
+                                  <div class="help-block with-errors"></div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="messages text-center">
+                            </div>
+
+                          </div>
+
+                          <div class="row">
+                            <div class="col-md-12 text-center">
+                              <div class="g-recaptcha d-inline-block" data-sitekey="6LdFfkMUAAAAAE70s3jLktId8bFvQO2UUU49w8Vj"></div><br />
+                              <input type="submit" class="btn btn-reid d-block mx-auto mt-3 mb-5 ripple" value="Send message">
+                            </div>
+                          </div>
+
+                        </form>
+                      </div>
+
+                    </div>
                   </div>
-               </div>
+                </div>
+              </div>
             </div>
-         </div>
+          </div>
+        </div>
       </section>
+
       <footer>
          <div class="container">
             <div class="row">
@@ -303,12 +335,7 @@
             </div>
          </div>
       </footer>
-      <div class="borders">
-         <div class="top top-2"></div>
-         <div class="bottom"></div>
-         <div class="left"></div>
-         <div class="right"></div>
-      </div>
+
       <!-- jQuery CDN -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
       <!-- jQuery local fallback -->
@@ -337,8 +364,14 @@
       <script src="validator.js"></script>
       <script src="contact.js"></script>
       <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenMax.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
       <!-- Custom scripts for this template -->
       <script src="js/custom.js"></script>
+      <script src="js/nav.js"></script>
       <script type="text/javascript">
          function validateRecaptcha() {
              var response = grecaptcha.getResponse();

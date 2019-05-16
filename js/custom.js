@@ -70,6 +70,20 @@ document.addEventListener("DOMContentLoaded", function(event) {
         }, '-=0.55');
     });
 
+    // hello fade-in pt 2
+    $(document).ready(function() {
+      var resumeText = $('.resume-text'),
+        tl = new TimelineLite();
+      // Adding Tweens To A Timeline
+      tl
+        .from(resumeText, 0.5, {
+          y: -25,
+          autoAlpha: 0,
+          ease: Power1.easeOut
+        }, '+=2.25');
+    });
+
+
     // pin the hero section
     $(document).ready(function() {
       // Init ScrollMagic
@@ -101,7 +115,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         var pinIntroScene = new ScrollMagic.Scene({
             triggerElement: '.devices',
             triggerHook: 0.08,
-            duration: '90%'
+            duration: '200%'
           })
           .setPin('.devices', {
             pushFollowers: false
@@ -113,7 +127,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
           var pinIntroScene = new ScrollMagic.Scene({
               triggerElement: '.smDevices',
               triggerHook: 0.05,
-              duration: '90%'
+              duration: '200%'
             })
             .setPin('.smDevices', {
               pushFollowers: false
@@ -125,7 +139,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
       var tween = new TimelineMax()
         .from(cardcolumns, 0.75, {
-          y: 800,
+          y: 650,
           autoAlpha: 0,
           ease: Power4.easeOut
         });
@@ -191,29 +205,28 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 
       // skills slide in
-      var skillsContainer = $('.skills-container');
-
-      var tween = new TimelineMax()
-        .from(skillsContainer, 1.25, {
-          y: 200,
-          autoAlpha: 0,
-          yoyo: true,
-          ease: Back.easeOut.config(0.75)
-        });
-
-
-      var scene = new ScrollMagic.Scene({
-          triggerElement: "#container-trigger",
-          duration: 150,
-          tweenChanges: true
-        })
-        .setTween(tween)
-        .reverse(false)
-        .addTo(controller);
-    });
+    //   var skillsContainer = $('.skills-container');
+    //
+    //   var tween = new TimelineMax()
+    //     .from(skillsContainer, 2.5, {
+    //       y: 750,
+    //       autoAlpha: 0,
+    //       yoyo: true,
+    //       ease: Back.easeOut.config(0.75)
+    //     });
+    //
+    //
+    //   var scene = new ScrollMagic.Scene({
+    //       duration: 150,
+    //       tweenChanges: true
+    //     })
+    //     .setTween(tween)
+    //     .reverse(false)
+    //     .addTo(controller);
+    // });
 
     //svg squiggle animation
-  $('path').each( function(i,v){
+  $('.svgAnimate').each( function(i,v){
     var lineLength = this.getTotalLength();
     $(this).css("stroke-dasharray", lineLength);
     $(this).css("stroke-dashoffset", lineLength);
@@ -298,6 +311,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
             });
         }
       });
+
+
+  });
+
 
 
   })(jQuery); // End of use strict

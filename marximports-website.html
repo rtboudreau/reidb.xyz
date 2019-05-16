@@ -30,6 +30,7 @@
   <meta name="keywords" content="reid, boudreau, developer, bootstrap, static, responsive, front-end">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta name="language" content="English">
+<meta name="theme-color" content="#4cab9e"/>
   <link rel="canonical" href="https://reidb.xyz/marximports-website" />
 
   <!-- Bootstrap core CSS -->
@@ -68,14 +69,32 @@
   <!-- End Google Tag Manager (noscript) -->
 
   <!-- Navigation -->
-  <nav>
-    <ul id="navi">
-      <li class="home"><a class="nav-link js-scroll-trigger" href="/">home</a></li>
-      <li class="about"><a class="nav-link js-scroll-trigger" href="/#about">about</a></li>
-      <li class="contact"><a data-toggle="collapse" class="nav-link active primary-link" data-parent="#accordion" href="#collapseOne">contact</a></li>
-      <li class="work"><a class="nav-link js-scroll-trigger" href="/#work">work</a></li>
-    </ul>
-  </nav>
+
+  <header class="cd-auto-hide-header">
+     <div class="logo">
+       <a href="/" class="nav-link js-scroll-trigger" >
+         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="46.867px" height="9.836px" viewBox="0 0 46.867 9.836" enable-background="new 0 0 46.867 9.836" xml:space="preserve" style="">
+        <path fill="none" stroke="#4CAB9E" stroke-width="3" stroke-miterlimit="10" d="M1.06,2.121l5.594,5.594l5.593-5.594l5.592,5.594
+          l5.594-5.594l5.592,5.594l5.594-5.594l5.593,5.594l5.595-5.594" class="GYzBOdQu_0"></path>
+        <style>.GYzBOdQu_0{stroke-dasharray:64 66;stroke-dashoffset:65;animation:GYzBOdQu_draw 1333ms ease-in 0ms forwards;}@keyframes GYzBOdQu_draw{100%{stroke-dashoffset:0;}}@keyframes GYzBOdQu_fade{0%{stroke-opacity:1;}93.54838709677419%{stroke-opacity:1;}100%{stroke-opacity:0;}}</style></svg>
+      </a>
+    </div>
+
+     <nav class="cd-primary-nav">
+        <a href="#cd-navigation" class="nav-trigger">
+           <span>
+              <em aria-hidden="true"></em>
+           </span>
+        </a> <!-- .nav-trigger -->
+
+        <ul id="cd-navigation">
+          <li class="home"><a class="nav-link js-scroll-trigger" href="/">home</a></li>
+          <li class="work"><a class="nav-link js-scroll-trigger" href="/#work">work</a></li>
+          <li class="about"><a class="nav-link js-scroll-trigger" href="/#about">about</a></li>
+          <li class="contact"><a data-toggle="collapse" class="nav-link primary-link" data-parent="#accordion" href="#collapseOne">contact</a></li>
+        </ul>
+     </nav> <!-- .cd-primary-nav -->
+  </header> <!-- .cd-auto-hide-header -->
 
   <div>
     <ul class="list-socials">
@@ -97,30 +116,55 @@
     </ul>
   </div>
 
-  <section class="project-navigation p-0 d-none d-sm-block">
-    <div class="container">
-      <div class="row">
-        <div class="previous-project p-0">
-          <a href="/marxfood-recipes">
-            <p class="text-center"><i class="fas fa-arrow-left"></i> <br />prev</p>
-          </a>
-        </div>
-        <div class="next-project p-0">
-          <a href="/nafoods-rebrand">
-            <p><i class="fas fa-arrow-right"></i><br />next</p>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- social and hero greeting -->
   <section  class="sr-fade">
     <div class="container mt-5">
       <div class="row">
         <div class="col-md-8 mx-auto text-center">
-          <h1 class="title"><a href="http://www.marximports.com"  rel="noreferrer" target="_blank">MarxImports.com <i class="fas fa-external-link-alt title-link"></i></a></h1>
+          <h1 class="title"><a href="http://www.marximports.com"  rel="noreferrer" target="_blank"><i class="fas fa-external-link-alt title-link"></i> MarxImports.com</a></h1>
           <p>Marx Imports is world class importer of specialty meats with an acute focus on animal welfare. Ranging from New Zealand grass-fed beef to the highly sought after Spanish Iberico pork, their products occupy the shelves of national retailers, appear on the menus of Michelin starred restaurants, and comprise the ingredients in major specialty food products.</p>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row mt-5">
+        <div class="col-12 skills-container">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 offset-md-2">
+                <h4 class="mb-0">My Role </h4>
+                <i class="waves">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="33" height="7" viewBox="0 0 73.94 14.19">
+                    <polyline points="2.83 2.83 11.36 11.36 19.9 2.83 28.43 11.36 36.97 2.83 45.5 11.36 54.04 2.83 62.58 11.36 71.11 2.83"></polyline>
+                  </svg>
+                </i>
+                <ul class="mt-2">
+                  <li>Developing all HTML, CSS, and JavaScript assets for the project.</li>
+                  <li>Assisting design team with UX and layout.</li>
+                  <li>Creating, resizing, and optimizing images and graphics.</li>
+                  <li>Implementing Google Tag Manager.</li>
+                  <li>General updating, maintenance, and troubleshooting.</li>
+                </ul>
+              </div>
+              <div class="col-md-4">
+                <h4 class="mb-0">Tools</h4>
+                <i class="waves">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="33" height="7" viewBox="0 0 73.94 14.19">
+                    <polyline points="2.83 2.83 11.36 11.36 19.9 2.83 28.43 11.36 36.97 2.83 45.5 11.36 54.04 2.83 62.58 11.36 71.11 2.83"></polyline>
+                  </svg>
+                </i>
+                <ul class="mt-2">
+                  <li><span class="icon icon-bootstrap" title="Bootstrap"></span>
+                  <span class="icon icon-html5" title="HTML5"></span>
+                  <span class="icon icon-css3" title="CSS3"></span></li>
+
+                  <li>
+                  <span class="icon icon-jquery" title="jquery"></span></li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -153,12 +197,12 @@
 
 
   <!-- Work Section -->
-  <section id="work" class="work-section pb-5 pb-md-0">
+  <section class="work-section">
     <div class="container-fluid no-gutters">
 
       <div class="row">
         <div class="col-md-10 col-lg-4 offset-sm-1 textEffect">
-          <h2 class="sec-title pl-3">b<br >rief</h2>
+          <h2 class="sec-title pl-3">brief</h2>
           <svg class="svg ml-3" version="1.1"  xmlns="http://www.w3.org/2000/svg" width="50" height="20">
             <path  fill="none" stroke="rgb(76, 171, 158)" stroke-width="4" d="M1.06,2.121L6.654,7.715L12.247,2.121L
                    17.839,7.715L23.433,2.121L29.026,7.715L34.619,2.121L40.212,7.715L45.806,2.121"></path>
@@ -172,65 +216,27 @@
           <img src="img/marxImportsIphoneArray_900.jpg" class="img-fluid" alt="">
         </div>
       </div>
+    </div>
+  </section>
 
-
-
+  <section class="project-navigation p-2 ">
+    <div class="container">
       <div class="row mt-5">
-        <div class="col-12 skills-container">
-          <div class="container">
-            <div class="row">
-              <div class="col-12">
-
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-6">
-                <h4 class="mb-0">My Role </h4>
-                <i class="waves">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="33" height="7" viewBox="0 0 73.94 14.19">
-                    <polyline points="2.83 2.83 11.36 11.36 19.9 2.83 28.43 11.36 36.97 2.83 45.5 11.36 54.04 2.83 62.58 11.36 71.11 2.83"></polyline>
-                  </svg>
-                </i>
-                <ul class="mt-2">
-                  <li>Developing all HTML, CSS, and JavaScript assets for the project.</li>
-                  <li>Assisting design team with UX and layout.</li>
-                  <li>Creating, resizing, and optimizing images and graphics.</li>
-                  <li>Implementing Google Tag Manager.</li>
-                  <li>General updating, maintenance, and troubleshooting.</li>
-                </ul>
-              </div>
-              <div class="col-md-4 offset-md-2">
-                <h4 class="mb-0">Tools</h4>
-                <i class="waves">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="33" height="7" viewBox="0 0 73.94 14.19">
-                    <polyline points="2.83 2.83 11.36 11.36 19.9 2.83 28.43 11.36 36.97 2.83 45.5 11.36 54.04 2.83 62.58 11.36 71.11 2.83"></polyline>
-                  </svg>
-                </i>
-                <ul class="mt-2">
-                  <li><span class="icon icon-bootstrap" title="Bootstrap"></span>
-                  <span class="icon icon-html5" title="HTML5"></span>
-                  <span class="icon icon-css3" title="CSS3"></span></li>
-
-                  <li>
-                  <span class="icon icon-jquery" title="jquery"></span></li>
-                </ul>
-              </div>
-
-            </div>
+        <div class="col-12 text-center">
+          <div class="btn-group btn-group-sm text-center" role="group" aria-label="Basic example">
+            <a class="btn btn-reid" href="/marxfood-recipes"><i class="fas fa-arrow-left"></i> prev</a>
+            <a class="btn btn-reid" href="/"><i class="fas fa-home"></i> </a>
+            <a class="btn btn-reid" href="/nafoods-rebrand">next <i class="fas fa-arrow-right"></i></a>
           </div>
         </div>
       </div>
-
     </div>
   </section>
 
 
-
-
-
   <!-- contact -->
   <section id="contact" class="pb-4 pt-0">
-    <div class="container-fluid">
+    <div class="container-fluid no-gutters">
 
       <div class="panel-group" id="accordion">
         <div class="panel panel-default">
@@ -238,13 +244,18 @@
           <div id="collapseOne" class="panel-collapse collapse">
             <div class="panel-body">
               <div class="container">
-
                 <div class="row">
                   <div class="col-lg-8 mx-auto">
                     <form id="contact-form" method="post" action="contact.php" role="form" onsubmit="return validateRecaptcha();">
                       <div class="controls">
 
                         <div class="row pt-5">
+                          <div class="col-12 pb-0">
+                            <div class="text-right">
+                              <span class="close-btn"><a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" title="Close"><i class="fas fa-times"></i></a></span>
+                            </div>
+                          </div>
+
                           <div class="col-6">
                             <div class="form-group">
                               <input id="form_firstName" type="text" name="firstName" class="form-control input-text js-input" required="required" data-error="First name is required.">
@@ -295,7 +306,7 @@
                       <div class="row">
                         <div class="col-md-12 text-center">
                           <div class="g-recaptcha d-inline-block" data-sitekey="6LdFfkMUAAAAAE70s3jLktId8bFvQO2UUU49w8Vj"></div><br />
-                          <input type="submit" class="btn btn-contact btn-send d-block mx-auto mt-3 mb-5" value="Send message">
+                          <input type="submit" class="btn btn-reid d-block mx-auto mt-3 mb-5 ripple" value="Send message">
                         </div>
                       </div>
 
@@ -311,7 +322,6 @@
     </div>
   </section>
 
-
   <footer>
     <div class="container">
       <div class="row">
@@ -326,12 +336,6 @@
     </div>
   </footer>
 
-  <div class="borders">
-    <div class="top top-2"></div>
-    <div class="bottom"></div>
-    <div class="left"></div>
-    <div class="right"></div>
-  </div>
 
 
   <!-- jQuery CDN -->
@@ -374,6 +378,7 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/custom.js"></script>
+  <script src="js/nav.js"></script>
 
 
   <script type="text/javascript">

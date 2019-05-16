@@ -30,6 +30,7 @@
   <meta name="keywords" content="reid, boudreau, developer, rails, ruby, web-app, app, back-end, engineer, deployment">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta name="language" content="English">
+<meta name="theme-color" content="#4cab9e"/>
   <link rel="canonical" href="https://reidb.xyz/todos-website" />
 
   <!-- Bootstrap core CSS -->
@@ -69,14 +70,32 @@
   <!-- End Google Tag Manager (noscript) -->
 
   <!-- Navigation -->
-  <nav>
-    <ul id="navi">
-      <li class="home"><a class="nav-link js-scroll-trigger" href="/">home</a></li>
-      <li class="about"><a class="nav-link js-scroll-trigger" href="/#about">about</a></li>
-      <li class="contact"><a data-toggle="collapse" class="nav-link active primary-link" data-parent="#accordion" href="#collapseOne">contact</a></li>
-      <li class="work"><a class="nav-link js-scroll-trigger" href="/#work">work</a></li>
-    </ul>
-  </nav>
+
+  <header class="cd-auto-hide-header">
+     <div class="logo">
+       <a href="/" class="nav-link js-scroll-trigger" >
+         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="46.867px" height="9.836px" viewBox="0 0 46.867 9.836" enable-background="new 0 0 46.867 9.836" xml:space="preserve" style="">
+        <path fill="none" stroke="#4CAB9E" stroke-width="3" stroke-miterlimit="10" d="M1.06,2.121l5.594,5.594l5.593-5.594l5.592,5.594
+          l5.594-5.594l5.592,5.594l5.594-5.594l5.593,5.594l5.595-5.594" class="GYzBOdQu_0"></path>
+        <style>.GYzBOdQu_0{stroke-dasharray:64 66;stroke-dashoffset:65;animation:GYzBOdQu_draw 1333ms ease-in 0ms forwards;}@keyframes GYzBOdQu_draw{100%{stroke-dashoffset:0;}}@keyframes GYzBOdQu_fade{0%{stroke-opacity:1;}93.54838709677419%{stroke-opacity:1;}100%{stroke-opacity:0;}}</style></svg>
+      </a>
+    </div>
+
+     <nav class="cd-primary-nav">
+        <a href="#cd-navigation" class="nav-trigger">
+           <span>
+              <em aria-hidden="true"></em>
+           </span>
+        </a> <!-- .nav-trigger -->
+
+        <ul id="cd-navigation">
+          <li class="home"><a class="nav-link js-scroll-trigger" href="/">home</a></li>
+          <li class="work"><a class="nav-link js-scroll-trigger" href="/#work">work</a></li>
+          <li class="about"><a class="nav-link js-scroll-trigger" href="/#about">about</a></li>
+          <li class="contact"><a data-toggle="collapse" class="nav-link primary-link" data-parent="#accordion" href="#collapseOne">contact</a></li>
+        </ul>
+     </nav> <!-- .cd-primary-nav -->
+  </header> <!-- .cd-auto-hide-header -->
 
   <div>
     <ul class="list-socials">
@@ -98,30 +117,57 @@
     </ul>
   </div>
 
-  <section class="project-navigation p-0 d-none d-sm-block">
-    <div class="container">
-      <div class="row">
-        <div class="previous-project p-0">
-          <a href="/">
-            <p class="text-center"><i class="fas fa-times"></i> <br />exit</p>
-          </a>
-        </div>
-        <div class="next-project p-0">
-          <a href="/marxfoods-website">
-            <p><i class="fas fa-arrow-right"></i><br />next</p>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
 
   <!-- hero greeting -->
   <section class="sr-fade">
     <div class="container mt-5">
       <div class="row">
         <div class="col-md-8 mx-auto text-center">
-          <h1 class="title"><a href="https://to--dos.herokuapp.com/login"  rel="noreferrer" target="_blank">To-Dos App <i class="fas fa-external-link-alt title-link"></i></a></h1>
-          <p>To-Dos is a fully responsive Ruby on Rails web application with clean design and intuitive UX. This is a personal project of mine that I undertook in order to learn Rails and one that will continue to evolve and grow.</p>
+          <h1 class="title"><a href="https://to--dos.herokuapp.com/login"  rel="noreferrer" target="_blank"><i class="fas fa-external-link-alt"></i> To-Dos App </a></h1>
+          <p>To-Dos is a fully responsive Ruby on Rails web application with clean design and intuitive UX. This is a personal project of mine that I undertook in order to display my understanding of Ruby on Rails.</p>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row mt-5">
+        <div class="col-12 skills-container sr-fade">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 offset-md-2">
+                <h4 class="mb-0">My Role</h4>
+                <i class="waves">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="33" height="7" viewBox="0 0 73.94 14.19">
+                    <polyline points="2.83 2.83 11.36 11.36 19.9 2.83 28.43 11.36 36.97 2.83 45.5 11.36 54.04 2.83 62.58 11.36 71.11 2.83"></polyline>
+                  </svg>
+                </i>
+                <ul class="mt-2">
+                  <li>Development, Design, Deployment, etc.</li>
+                  <li>PostgreSQL database creation and management.</li>
+                  <li>User authentication and password hashing/salting.</li>
+                </ul>
+              </div>
+              <div class="col-md-4">
+                <h4 class="mb-0">Tools</h4>
+                <i class="waves">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="33" height="7" viewBox="0 0 73.94 14.19">
+                    <polyline points="2.83 2.83 11.36 11.36 19.9 2.83 28.43 11.36 36.97 2.83 45.5 11.36 54.04 2.83 62.58 11.36 71.11 2.83"></polyline>
+                  </svg>
+                </i>
+                <ul class="mt-2">
+                  <li><span class="icon icon-rails" title="Ruby on Rails"></span>
+                    <span class="icon icon-html5" title="HTMl5"></span>
+                    <span class="icon icon-css3" title="CSS3"></span></li>
+
+                  <li><span class="icon icon-bootstrap" title="Bootstrap"></span>
+                    <span class="icon icon-jquery" title="Jquery"></span>
+                    <span class="icon icon-sass" title="Sass"></span></li>
+
+                  <li>
+                    <span class="icon icon-git" title="Git"></span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -154,12 +200,12 @@
 
 
   <!-- Work Section -->
-  <section id="work" class="work-section pb-5 pb-md-0">
+  <section id="work" class="work-section">
     <div class="container-fluid no-gutters">
 
       <div class="row">
-        <div class="col-md-10 col-lg-4 offset-md-1 textEffect">
-          <h2 class="sec-title pl-3">b<br />rief</h2>
+        <div class="col-md-8 col-lg-6 col-xl-4 offset-md-2 offset-lg-3 offset-xl-4 mb-5">
+          <h2 class="sec-title pl-3">brief</h2>
           <svg class="svg ml-3" version="1.1"  xmlns="http://www.w3.org/2000/svg" width="50" height="20">
             <path  fill="none" stroke="rgb(76, 171, 158)" stroke-width="4" d="M1.06,2.121L6.654,7.715L12.247,2.121L
                    17.839,7.715L23.433,2.121L29.026,7.715L34.619,2.121L40.212,7.715L45.806,2.121"></path>
@@ -172,73 +218,35 @@
             </p>
           </div>
         </div>
-        <div class="col-md-10 col-lg-5 offset-md-1 mt-5">
+      </div>
+      <div class="row">
+        <div class="col-md-10 col-lg-6 offset-md-1 offset-lg-3">
           <div class="embed-responsive embed-responsive-16by9">
             <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/jjl4xwLY-pw?modestbranding=1&showinfo=0&rel=0&color=white" allowfullscreen></iframe>
           </div>
         </div>
       </div>
-
-
-
-      <div class="row mt-5">
-        <div class="col-12 skills-container">
-          <div class="container">
-            <div class="row">
-              <div class="col-12">
-
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-6">
-                <h4 class="mb-0">My Role </h4>
-                <i class="waves">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="33" height="7" viewBox="0 0 73.94 14.19">
-                    <polyline points="2.83 2.83 11.36 11.36 19.9 2.83 28.43 11.36 36.97 2.83 45.5 11.36 54.04 2.83 62.58 11.36 71.11 2.83"></polyline>
-                  </svg>
-                </i>
-                <ul class="mt-2">
-                  <li>Development, Design, Deployment, etc.</li>
-                  <li>PostgreSQL database creation and management.</li>
-                  <li>User authentication and password hashing/salting.</li>
-                </ul>
-              </div>
-              <div class="col-md-4 offset-md-2">
-                <h4 class="mb-0">Tools</h4>
-                <i class="waves">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="33" height="7" viewBox="0 0 73.94 14.19">
-                    <polyline points="2.83 2.83 11.36 11.36 19.9 2.83 28.43 11.36 36.97 2.83 45.5 11.36 54.04 2.83 62.58 11.36 71.11 2.83"></polyline>
-                  </svg>
-                </i>
-                <ul class="mt-2">
-                  <li><span class="icon icon-rails" title="Ruby on Rails"></span>
-                    <span class="icon icon-html5" title="HTMl5"></span>
-                    <span class="icon icon-css3" title="CSS3"></span></li>
-
-                  <li><span class="icon icon-bootstrap" title="Bootstrap"></span>
-                    <span class="icon icon-jquery" title="Jquery"></span>
-                    <span class="icon icon-sass" title="Sass"></span></li>
-
-                  <li>
-                    <span class="icon icon-git" title="Git"></span></li>
-                </ul>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </div>
-
     </div>
   </section>
 
 
-
-
+  <section class="project-navigation p-2 ">
+    <div class="container">
+      <div class="row mt-5">
+        <div class="col-12 text-center">
+          <div class="btn-group btn-group-sm text-center" role="group" aria-label="Basic example">
+            <a class="btn btn-reid" href="/#work"><i class="fas fa-times"></i></i> exit</a>
+            <a class="btn btn-reid" href="/"><i class="fas fa-home"></i> </a>
+            <a class="btn btn-reid" href="/marxfoods-website">next <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- contact -->
   <section id="contact" class="pb-4 pt-0">
-    <div class="container-fluid">
+    <div class="container-fluid no-gutters">
 
       <div class="panel-group" id="accordion">
         <div class="panel panel-default">
@@ -253,6 +261,9 @@
                       <div class="controls">
 
                         <div class="row pt-5">
+                          <div class="close-btn text-center">
+                            <a data-toggle="collapse" class="nav-link primary-link" data-parent="#accordion" href="#collapseOne"><i class="fas fa-times"></i></a>
+                          </div>
                           <div class="col-6">
                             <div class="form-group">
                               <input id="form_firstName" type="text" name="firstName" class="form-control input-text js-input" required="required" data-error="First name is required.">
@@ -303,7 +314,7 @@
                       <div class="row">
                         <div class="col-md-12 text-center">
                           <div class="g-recaptcha d-inline-block" data-sitekey="6LdFfkMUAAAAAE70s3jLktId8bFvQO2UUU49w8Vj"></div><br />
-                          <input type="submit" class="btn btn-contact btn-send d-block mx-auto mt-3 mb-5" value="Send message">
+                          <input type="submit" class="btn btn-reid d-block mx-auto mt-3 mb-5 ripple" value="Send message">
                         </div>
                       </div>
 
@@ -319,7 +330,6 @@
     </div>
   </section>
 
-
   <footer>
     <div class="container">
       <div class="row">
@@ -333,13 +343,6 @@
       </div>
     </div>
   </footer>
-
-  <div class="borders">
-    <div class="top top-2"></div>
-    <div class="bottom"></div>
-    <div class="left"></div>
-    <div class="right"></div>
-  </div>
 
 
   <!-- jQuery CDN -->
@@ -382,7 +385,7 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/custom.js"></script>
-
+  <script src="js/nav.js"></script>
 
   <script type="text/javascript">
     function validateRecaptcha() {
@@ -395,9 +398,6 @@
       }
     }
   </script>
-
-
-
 
 </body>
 
