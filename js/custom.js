@@ -110,29 +110,29 @@ document.addEventListener("DOMContentLoaded", function(event) {
         })
         .addTo(controller);
 
-        // Pin Devices section
-        var controller = new ScrollMagic.Controller();
-        var pinIntroScene = new ScrollMagic.Scene({
-            triggerElement: '.devices',
-            triggerHook: 0.08,
-            duration: '200%'
-          })
-          .setPin('.devices', {
-            pushFollowers: false
-          })
-          .addTo(controller);
+      // Pin Devices section
+      var controller = new ScrollMagic.Controller();
+      var pinIntroScene = new ScrollMagic.Scene({
+          triggerElement: '.devices',
+          triggerHook: 0.08,
+          duration: '200%'
+        })
+        .setPin('.devices', {
+          pushFollowers: false
+        })
+        .addTo(controller);
 
-          // Pin Small Devices section
-          var controller = new ScrollMagic.Controller();
-          var pinIntroScene = new ScrollMagic.Scene({
-              triggerElement: '.smDevices',
-              triggerHook: 0.05,
-              duration: '200%'
-            })
-            .setPin('.smDevices', {
-              pushFollowers: false
-            })
-            .addTo(controller);
+      // Pin Small Devices section
+      var controller = new ScrollMagic.Controller();
+      var pinIntroScene = new ScrollMagic.Scene({
+          triggerElement: '.smDevices',
+          triggerHook: 0.05,
+          duration: '200%'
+        })
+        .setPin('.smDevices', {
+          pushFollowers: false
+        })
+        .addTo(controller);
 
       // portfolio slide in
       var cardcolumns = $('.card-columns');
@@ -183,13 +183,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
       var tween = new TimelineMax()
         .from(sittingme, 1.75, {
           y: -187,
-          x:  -30,
+          x: -30,
           scale: 0.5,
           autoAlpha: 1,
           ease: Power1.easeOut
         })
         .to(sittingme, 0, {
-          x:  0
+          x: 0
         });
 
       var scene = new ScrollMagic.Scene({
@@ -202,126 +202,95 @@ document.addEventListener("DOMContentLoaded", function(event) {
         .addTo(controller);
 
 
+      //svg squiggle animation
+      $('.svgAnimate').each(function(i, v) {
+        var lineLength = this.getTotalLength();
+        $(this).css("stroke-dasharray", lineLength);
+        $(this).css("stroke-dashoffset", lineLength);
 
+        window['tl_path_' + i] = new TimelineMax({
+          paused: true
+        });
+        window['tl_path_' + i].to($(this), 0.9, {
+          strokeDashoffset: 0,
+          ease: Linear.easeNone
+        });
 
-      // skills slide in
-    //   var skillsContainer = $('.skills-container');
-    //
-    //   var tween = new TimelineMax()
-    //     .from(skillsContainer, 2.5, {
-    //       y: 750,
-    //       autoAlpha: 0,
-    //       yoyo: true,
-    //       ease: Back.easeOut.config(0.75)
-    //     });
-    //
-    //
-    //   var scene = new ScrollMagic.Scene({
-    //       duration: 150,
-    //       tweenChanges: true
-    //     })
-    //     .setTween(tween)
-    //     .reverse(false)
-    //     .addTo(controller);
-    // });
+        window['waypoint_' + i] = new Waypoint({
+          element: $(this),
+          offset: 550,
+          handler: function(dir) {
+            dir == 'down' ? window['tl_path_' + i].play() : window['tl_path_' + i].reverse();
+          }
+        })
+      });
 
-    //svg squiggle animation
-  $('.svgAnimate').each( function(i,v){
-    var lineLength = this.getTotalLength();
-    $(this).css("stroke-dasharray", lineLength);
-    $(this).css("stroke-dashoffset", lineLength);
-
-    window['tl_path_'+i] = new TimelineMax({paused:true});
-    window['tl_path_'+i].to( $(this), 0.9, { strokeDashoffset: 0, ease: Linear.easeNone } );
-
-    window['waypoint_'+i] = new Waypoint({
-      element: $(this),
-      offset: 550,
-      handler: function(dir) {
-        dir=='down'?window['tl_path_'+i].play():window['tl_path_'+i].reverse();
-      }
-    })
-  });
-
-    //contact form add class
-
-    $('.js-input').keyup(function() {
-      if ($(this).val()) {
-        $(this).addClass('not-empty');
-      } else {
-        $(this).removeClass('not-empty');
-      }
-    });
-
-    // add dashes to phone number
-    $('#form_phone').keyup(function() {
-      $(this).val($(this).val().replace(/(\d{3})\-?(\d{3})\-?(\d{4})/, '$1-$2-$3'))
-    });
-
-
-
-    //collapse footer
-    $("#collapseOne").on("show.bs.collapse", function() {
-      $("html, body").animate({
-        scrollTop: 999999
-      }, "slow");
-    });
-
-    //switch between open and close when footer is clicked
-
-    $('.primary-link').click(function() {
-      $('.switchCopy').text($('.switchCopy').text() == '[close]' ? '[open]' : '[close]');
-    });
-
-    $('.switchCopy').click(function() {
-      $(this).text($(this).text() == '[close]' ? '[open]' : '[close]');
-    });
-
-    // Closes responsive menu when a scroll trigger link is clicked
-    $('.js-scroll-trigger').click(function() {
-      $('.navbar-collapse').collapse('hide');
-    });
-
-    // Activate scrollspy to add active class to navbar items on scroll
-    $('body').scrollspy({
-      target: '#mainNav',
-      offset: 54
-    });
-
-    // fade in for scrollreveal
-    ScrollReveal().reveal('.sr-fade', {
-    opacity: 0,
-    duration: 600,
-    easing: 'ease-in'
-    });
-
-    //sticky title link
-
-      $(function(){
-        if($('body').is('.interior')){
-          var stickyTitle = $('.title').offset().top;
-
-            $(window).scroll(function() {
-              if ($(window).scrollTop() > stickyTitle) {
-                  $('.title').addClass('affix');
-              }
-              else {
-                  $('.title').removeClass('affix');
-              }
-            });
+      //contact form add class
+      $('.js-input').keyup(function() {
+        if ($(this).val()) {
+          $(this).addClass('not-empty');
+        } else {
+          $(this).removeClass('not-empty');
         }
       });
 
+      // add dashes to phone number
+      $('#form_phone').keyup(function() {
+        $(this).val($(this).val().replace(/(\d{3})\-?(\d{3})\-?(\d{4})/, '$1-$2-$3'))
+      });
 
-  });
 
 
+      //collapse contact form
+      $("#collapseOne").on("show.bs.collapse", function() {
+        $("html, body").animate({
+          scrollTop: 999999
+        }, "slow");
+      });
+
+      //switch between open and close when contact trigger is clicked
+      $('.primary-link').click(function() {
+        $('.switchCopy').text($('.switchCopy').text() == '[close]' ? '[open]' : '[close]');
+      });
+
+      $('.switchCopy').click(function() {
+        $(this).text($(this).text() == '[close]' ? '[open]' : '[close]');
+      });
+
+      // Closes responsive menu when a scroll trigger link is clicked
+      $('.js-scroll-trigger').click(function() {
+        $('.navbar-collapse').collapse('hide');
+      });
+
+      // Activate scrollspy to add active class to navbar items on scroll
+      $('body').scrollspy({
+        target: '#mainNav',
+        offset: 54
+      });
+
+      // fade in for scrollreveal
+      ScrollReveal().reveal('.sr-fade', {
+        opacity: 0,
+        duration: 600,
+        easing: 'ease-in'
+      });
+
+      //sticky title link
+      $(function() {
+        if ($('body').is('.interior')) {
+          var stickyTitle = $('.title').offset().top;
+
+          $(window).scroll(function() {
+            if ($(window).scrollTop() > stickyTitle) {
+              $('.title').addClass('affix');
+            } else {
+              $('.title').removeClass('affix');
+            }
+          });
+        }
+      });
+    });
 
   })(jQuery); // End of use strict
-
-  // returns to top on reload
-  //window.onbeforeunload = function () {
-  //  window.scrollTo(0, 0);
-  //}
 
 });
